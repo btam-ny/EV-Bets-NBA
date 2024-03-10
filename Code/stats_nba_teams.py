@@ -9,6 +9,7 @@ import glob
 import os
 
 #######################################################################
+#API Info
 #https://rapidapi.com/api-sports/api/api-nba
 headers = {
 	"X-RapidAPI-Key": "7f15289082msh2b80f8151be1e74p16fba4jsnff9ea5c99f8d",
@@ -18,6 +19,7 @@ api = "https://api-nba-v1.p.rapidapi.com/"
 
 
 #######################################################################
+#Functions and Variations
 
 def pullGames(date):
     url = api + "games"
@@ -121,28 +123,28 @@ for EVENT_ID in EVENT_IDS:
                 "pfouls": j['pFouls']
             }
             data_stats.append(row)
+    print('Event ID: ', EVENT_ID, ' Complete')
 
+#Turn Data stats into a df
 data_stats_df = pd.DataFrame(data_stats)
 
+#Merge Stats with game list
 data_stats_df['game_id'] = data_stats_df['game_id'].astype(int)
 data_stats_df = pd.merge(data_stats_df, games_list_df, how='left', left_on='game_id', right_on='id')
 
 #######################################################################
-#Load in historical data
+#Historical and Current Merge
 
+#Load in historical data. Do this before loading in path so current is not in it
 file_paths = glob.glob(os.path.join(current_directory,'data', 'team_defense_full_data', '*.csv'))
-
-#file_paths = glob.glob('G:\\My Drive\\Code\\EV Bets\\team_defense_full_data\\*.csv')
 df = pd.concat((pd.read_csv(file) for file in file_paths), ignore_index=True)
 
 #Export todays data
 filename_defense_full_stats = 'team_data_defense_full_'+today_date_str+'.csv'
 full_path_data_stats = os.path.join(current_directory,'data', 'team_defense_full_data', filename_defense_full_stats)
-
 data_stats_df.to_csv(full_path_data_stats, header=True)
 
-
-#Concat data
+#Concat Historical and current data
 data_stats_df = pd.concat([data_stats_df, df], ignore_index=True)
 
 #Flip game ids for defensive stats and drop dupcliates
@@ -154,7 +156,7 @@ data_stats_df = data_stats_df.sort_values(['team name', 'date'])
 data_stats_df = data_stats_df.groupby('team name').tail(10)
 
 #######################################################################
-#Group teams
+#Group teams in pivot
 
 columns_to_sum = ['points', 'assists', 'offReb', 'defReb', 'totReb', 'steals', 'turnovers', 'blocks', 'tpm', 'tpa', 'plusMinus', 'fastBreakPoints', 'pointsInPaint', 'biggestLead', 'secondChancePoints', 'pointsOffTurnovers', 'longestRun', 'fgm', 'fga', 'ftm', 'fta', 'pfouls']
 group_columns = ['team name']
@@ -163,30 +165,32 @@ group_columns = ['team name']
 defense_df = group_and_sum(data_stats_df, columns_to_sum, group_columns)
 
 #######################################################################
-#Add Stats
+#Add combo stats and possessions
 defense_df['Points_Rebounds_Assist'] = defense_df['points'] + defense_df['totReb'] + defense_df['assists']
 defense_df['Points_Rebounds'] = defense_df['points'] + defense_df['totReb']
 defense_df['Points_Assist'] = defense_df['points']+ defense_df['assists']
 defense_df['Rebounds_Assist'] = defense_df['totReb'] + defense_df['assists']
-
 defense_df['Possessions'] = defense_df['fga'] + (defense_df['fta'] * .475) - defense_df['offReb'] + defense_df['turnovers']
 
 #######################################################################
 #Calculate stat efficiency
 defensive_eff_stats = ['points','assists','tpm','totReb','Points_Rebounds_Assist','Points_Rebounds','Points_Assist','Rebounds_Assist']
 
+#Calculate teams stat per possession
 for stat in defensive_eff_stats:
     defense_df[stat+'_pp'] = calculate_avg(defense_df,stat,'Possessions')
 
+#Calculate league stat per possession
 for stat in defensive_eff_stats:
     defense_df[stat+'_league_pp'] = defense_df[stat].sum() / defense_df['Possessions'].sum()
 
+#Calculate efficiency. Team effiency / league effiency
 for stat in defensive_eff_stats:
     defense_df[stat+'_eff'] = defense_df[stat+'_pp'] / defense_df[stat+'_league_pp']
 
+#Drop columns
 keep_cols = ['team name','points_eff','assists_eff','tpm_eff','totReb_eff','Points_Rebounds_Assist_eff','Points_Rebounds_eff','Points_Assist_eff','Rebounds_Assist_eff']
 defense_df = defense_df[keep_cols]
-
 
 #######################################################################
 #Export

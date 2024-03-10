@@ -22,13 +22,12 @@ API_KEY = args.api_key or '8f6ac42e4584c9bacffc9e1a0fec95a3'
 SPORT = 'basketball_nba'
 
 # Bookmaker regions
-# uk | us | us2 | eu | au
 REGIONS = 'us'
 
 # Odds markets
-# h2h | spreads | totals
 MARKETS = 'h2h,spreads,totals'
 
+#Prop Market keys
 PROP_MARKETS = ['player_points', 
                 'player_assists', 
                 'player_rebounds', 
@@ -39,13 +38,14 @@ PROP_MARKETS = ['player_points',
                 'player_rebounds_assists']
 
 # Odds format
-# decimal | american
 ODDS_FORMAT = 'american'
 
 # Date format
 DATE_FORMAT = 'iso'
 
 #######################################################################
+# Get the list of game IDS from the previous day
+
 odds_response = requests.get(f'https://api.the-odds-api.com/v4/sports/{SPORT}/odds', params={
     'api_key': API_KEY,
     'regions': REGIONS,
@@ -71,9 +71,7 @@ df_id = pd.json_normalize(odds_json)
 df_id = df_id[['id']]
 
 #######################################################################
-# Event response for player probs
-
-#EVENT_IDS = df_id['id'].tolist()
+# Event response for player probs. Uses game ID list
 
 responses = []
 flattened_data_prop_list = []
@@ -104,8 +102,9 @@ for market in PROP_MARKETS:
                                                  ['bookmakers', 'markets', 'last_update']], 
                                                 record_prefix='outcomes_', errors='ignore')
         flattened_data_prop_list.append(flattened_data_prop)
-        print('Event_id Pull '+str(EVENT_ID)+' Complete')
+    print('Prop Market ', market, ' Complete')
 
+#Merge all files from list into one dataframe
 flattened_data_prop = pd.concat(flattened_data_prop_list)
 
 if event_response.status_code != 200:
@@ -116,17 +115,17 @@ else:
     print('Remaining requests', event_response.headers['x-requests-remaining'])
     print('Used requests', event_response.headers['x-requests-used'])
 
+#Dedup just in case the pull did the same days
 flattened_data_prop = flattened_data_prop.drop_duplicates()
 
 #######################################################################
+#Outputs
 
 today_date = datetime.today().date()
 today_date_str = today_date.strftime('%Y-%m-%d')
-
-#Export test to desktop
-#flattened_data_prop.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\prop_data\data_points_'+ today_date_str+'.csv', header=True)
 current_directory = os.getcwd()
 
+#Exports
 filename_data_prop = 'data_points_'+today_date_str+'.csv'
 full_path_data_prop = os.path.join(current_directory, 'data', 'prop_data', filename_data_prop)
 flattened_data_prop.to_csv(full_path_data_prop , header=True)

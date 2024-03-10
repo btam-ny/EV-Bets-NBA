@@ -12,6 +12,8 @@ import os
 
 #######################################################################
 #Data Load
+
+#Get Directory and Dates
 current_directory = os.getcwd()
 today_date = datetime.today().date()
 today_date_str = today_date.strftime('%Y-%m-%d')
@@ -108,6 +110,7 @@ prop_odds['outcomes_point_adj'] = prop_odds.apply(lambda row: row['outcomes_poin
 
 
 #######################################################################
+#Cleaning, creating columns and stats
 
 #Calculate averages
 for stat_to_pull in stats_to_pull:
@@ -122,7 +125,6 @@ merge = pd.merge(prop_odds, last_10_stats, how='left', left_on='outcomes_descrip
 
 #Add opposing team and Defensive Ratings
 merge['opposing team'] = merge.apply(lambda row: row['away_team'] if row['team'] == row['home_team'] else row['home_team'], axis=1)
-
 defensive_rating = pd.merge(defensive_rating, team_name_fix, how='left', left_on='team name', right_on='team name')
 merge = pd.merge(merge, defensive_rating, how='left', left_on='opposing team', right_on='name fix')
 
@@ -189,4 +191,4 @@ points_merge.to_csv(full_path_points_merge, header=True)
 filename_points_merge_single = 'EV_Output.csv'
 full_path_filename_points_merge_single = os.path.join(current_directory, 'data','output_today', filename_points_merge_single)
 points_merge.to_csv(full_path_filename_points_merge_single, header=True)
-print('Output Complete. You can refresh Power')
+print('Output Complete. You can refresh PowerBI now')

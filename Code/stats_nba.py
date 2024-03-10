@@ -121,7 +121,7 @@ for EVENT_ID in EVENT_IDS:
             "plusMinus": i['plusMinus']
         }
         data_stats.append(row)
-        print('Pulling Stats for Game ID:', i['game']['id'])
+    print('Pulling Stats for Game ID:', i['game']['id'])
 
 #######################################################################
 #Data Cleaning and column creation
@@ -187,12 +187,14 @@ for stat in stats_for_variance:
     data_stats_df = calculate_deviation(data_stats_df, stat)
 
 #######################################################################
+#Filters and Cleaning
+
 #Filter out players
 data_stats_df['minutes'] = pd.to_numeric(data_stats_df['minutes'], errors='coerce')
 data_stats_df['minutes'] = data_stats_df['minutes'].fillna(0).astype(int)
 data_stats_df = data_stats_df[data_stats_df['minutes'] >= 5]
 
-# Subtract 6 hours because randomly the data is set at gmt
+# Subtract 6 hours because the time zone is GMT and some of the night games leak over to the next day
 data_stats_df['date'] = pd.to_datetime(data_stats_df['date'], format='%m/%d/%Y %I:%M:%S %p')- pd.Timedelta(hours=6)
 data_stats_df['date'] = data_stats_df['date'].dt.date
 
@@ -209,7 +211,6 @@ data_stats_df = data_stats_df.groupby('player_id').tail(10)
 filename_last10games_single = 'data_stats_last_10.csv'
 full_path_last10games_single = os.path.join(current_directory, 'data', 'stats_data_last10', filename_last10games_single)
 data_stats_df.to_csv(full_path_last10games_single, header=True)
-
 
 
 #######################################################################
@@ -250,13 +251,15 @@ columns_to_sum = ['points',
 
 group_columns = ['First Last Name', 'team', 'position']
 
+#Convert to numeric
 data_stats_df[columns_to_sum] = data_stats_df[columns_to_sum].apply(pd.to_numeric, errors='coerce')
 
+#Get all coluns
 all_columns = group_columns + columns_to_sum
 
+#Group by and sum
 grouped_df = data_stats_df[all_columns].groupby(group_columns).sum().reset_index()
 grouped_df['count'] = data_stats_df[group_columns].groupby(group_columns).size().reset_index(name='count')['count']
-
 
 #######################################################################
 #OUTPUTS for merging stats onto odds data for calcs
