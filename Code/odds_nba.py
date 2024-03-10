@@ -5,8 +5,7 @@ import datetime
 from datetime import datetime
 import time
 import io
-#from google.cloud import bigquery
-
+import os
 
 #######################################################################
 parser = argparse.ArgumentParser(description='Sample V4')
@@ -127,4 +126,9 @@ today_date = datetime.today().date()
 today_date_str = today_date.strftime('%Y-%m-%d')
 
 #Export test to desktop
-flattened_data_prop.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\prop_data\data_points_'+ today_date_str+'.csv', header=True)
+#flattened_data_prop.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\prop_data\data_points_'+ today_date_str+'.csv', header=True)
+current_directory = os.getcwd()
+
+filename_data_prop = 'data_points_'+today_date_str+'.csv'
+full_path_data_prop = os.path.join(current_directory, 'team_defense_data', filename_data_prop)
+flattened_data_prop.to_csv(full_path_data_prop , header=True)

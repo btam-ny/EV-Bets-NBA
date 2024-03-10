@@ -8,20 +8,34 @@ from datetime import datetime
 from scipy.stats import zscore
 from scipy.stats import norm
 import numpy as np
+import os
 
 #######################################################################
 #Data Load
+current_directory = os.getcwd()
 today_date = datetime.today().date()
 today_date_str = today_date.strftime('%Y-%m-%d')
+#C:\Users\Brian\Main Folder\EV Bets
 
-#Load in prop odds, last 10 stats and defensive ratings
-prop_odds = pd.read_csv(r'C:\Users\Brian\Main Folder\EV Bets\prop_data\data_points_'+ today_date_str +'.csv')
-last_10_stats = pd.read_csv(r'C:\Users\Brian\Main Folder\EV Bets\stats_data_group\data_stats_last10games_'+today_date_str+'.csv')
-defensive_rating = pd.read_csv(r'C:\Users\Brian\Main Folder\EV Bets\team_defense_data\team_data_defense_last10_'+today_date_str+'.csv')
+#Load in prop odds
+file_path_prop_odds = os.path.join(current_directory, 'prop_data', 'data_points_'+ today_date_str +'.csv')
+prop_odds = pd.read_csv(file_path_prop_odds)
+
+#Load in last 10 stats
+file_path_last_10_stats = os.path.join(current_directory, 'stats_data_group', 'data_stats_last10games_'+ today_date_str +'.csv')
+last_10_stats = pd.read_csv(file_path_last_10_stats)
+
+#Load in Defense
+file_path_defensive_rating = os.path.join(current_directory, 'team_defense_data', 'team_data_defense_last10_'+ today_date_str +'.csv')
+defensive_rating = pd.read_csv(file_path_defensive_rating)
+
 
 #Load in name/team fixes
-name_fix = pd.read_csv(r'C:\Users\Brian\Main Folder\EV Bets\lookups\name_fix.csv')
-team_name_fix = pd.read_csv(r'C:\Users\Brian\Main Folder\EV Bets\lookups\team_name_fix.csv')
+file_path_name_fix = os.path.join(current_directory, 'lookups', 'name_fix.csv')
+name_fix = pd.read_csv(file_path_name_fix)
+
+file_path_team_name_fix = os.path.join(current_directory, 'lookups', 'team_name_fix.csv')
+team_name_fix = pd.read_csv(file_path_team_name_fix)
 
 #######################################################################
 #Variables
@@ -111,8 +125,6 @@ merge = pd.merge(prop_odds, last_10_stats, how='left', left_on='outcomes_descrip
 #Add opposing team and Defensive Ratings
 merge['opposing team'] = merge.apply(lambda row: row['away_team'] if row['team'] == row['home_team'] else row['home_team'], axis=1)
 
-merge.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\test.csv', header=True, index=False)
-
 defensive_rating = pd.merge(defensive_rating, team_name_fix, how='left', left_on='team name', right_on='team name')
 merge = pd.merge(merge, defensive_rating, how='left', left_on='opposing team', right_on='name fix')
 
@@ -169,8 +181,13 @@ points_merge = points_merge[columns_to_keep]
 #Outputs
 points_merge['Date'] = today_date_str
 
-#Historical output just for reference
-points_merge.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\outputs\EV_Output_'+today_date_str+'.csv', header=True, index=False)
+#Historical output for stacking
+filename_points_merge = 'EV_Output_'+today_date_str+'.csv'
+full_path_points_merge = os.path.join(current_directory, 'outputs', filename_points_merge)
+points_merge.to_csv(full_path_points_merge, header=True)
 
-#Main Output
-points_merge.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\output_today\EV_Output.csv', header=True, index=False)
+
+#Main Output for current day
+filename_points_merge_single = 'EV_Output.csv'
+full_path_filename_points_merge_single = os.path.join(current_directory, 'outputs', filename_points_merge_single)
+points_merge.to_csv(full_path_filename_points_merge_single, header=True)

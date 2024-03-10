@@ -7,6 +7,7 @@ from scipy.stats import zscore
 from scipy.stats import norm
 import pandas as pd
 import glob
+import os
 
 #######################################################################
 #API pull Data
@@ -184,7 +185,10 @@ for stat in stats_for_variance:
 
 #######################################################################
 #Filter out players
-data_stats_df['minutes'] = data_stats_df['minutes'].astype(int)
+#data_stats_df['minutes'] = data_stats_df['minutes'].astype(int)
+#data_stats_df = data_stats_df[data_stats_df['minutes'] >= 5]
+data_stats_df['minutes'] = pd.to_numeric(data_stats_df['minutes'], errors='coerce')
+data_stats_df['minutes'] = data_stats_df['minutes'].fillna(0).astype(int)
 data_stats_df = data_stats_df[data_stats_df['minutes'] >= 5]
 
 # Subtract 6 hours because randomly the data is set at gmt
@@ -251,4 +255,10 @@ grouped_df['count'] = data_stats_df[group_columns].groupby(group_columns).size()
 
 #######################################################################
 #OUTPUTS for merging stats onto odds data for calcs
-grouped_df.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\stats_data_group\data_stats_last10games_'+today_date_str+'.csv', header=True)
+current_directory = os.getcwd()
+print(current_directory)
+filename = 'data_stats_last10games_'+today_date_str+'.csv'
+full_path = os.path.join(current_directory, 'stats_data_group', filename)
+
+grouped_df.to_csv(full_path, header=True)
+
