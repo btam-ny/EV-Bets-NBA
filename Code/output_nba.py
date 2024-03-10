@@ -17,17 +17,16 @@ today_date = datetime.today().date()
 today_date_str = today_date.strftime('%Y-%m-%d')
 
 #Load in prop odds
-file_path_prop_odds = os.path.join(current_directory, 'prop_data', 'data_points_'+ today_date_str +'.csv')
+file_path_prop_odds = os.path.join(current_directory, 'data', 'prop_data', 'data_points_'+ today_date_str +'.csv')
 prop_odds = pd.read_csv(file_path_prop_odds)
 
 #Load in last 10 stats
-file_path_last_10_stats = os.path.join(current_directory, 'stats_data_group', 'data_stats_last10games_'+ today_date_str +'.csv')
+file_path_last_10_stats = os.path.join(current_directory, 'data', 'stats_data_group', 'data_stats_last10games_'+ today_date_str +'.csv')
 last_10_stats = pd.read_csv(file_path_last_10_stats)
 
 #Load in Defense
-file_path_defensive_rating = os.path.join(current_directory, 'team_defense_data', 'team_data_defense_last10_'+ today_date_str +'.csv')
+file_path_defensive_rating = os.path.join(current_directory, 'data', 'team_defense_data', 'team_data_defense_last10_'+ today_date_str +'.csv')
 defensive_rating = pd.read_csv(file_path_defensive_rating)
-
 
 #Load in name/team fixes
 file_path_name_fix = os.path.join(current_directory, 'lookups', 'name_fix.csv')
@@ -182,11 +181,11 @@ points_merge['Date'] = today_date_str
 
 #Historical output for stacking
 filename_points_merge = 'EV_Output_'+today_date_str+'.csv'
-full_path_points_merge = os.path.join(current_directory, 'outputs', filename_points_merge)
+full_path_points_merge = os.path.join(current_directory, 'data','outputs', filename_points_merge)
 points_merge.to_csv(full_path_points_merge, header=True)
 
 
 #Main Output for current day
 filename_points_merge_single = 'EV_Output.csv'
-full_path_filename_points_merge_single = os.path.join(current_directory, 'outputs', filename_points_merge_single)
+full_path_filename_points_merge_single = os.path.join(current_directory, 'data','output_today', filename_points_merge_single)
 points_merge.to_csv(full_path_filename_points_merge_single, header=True)

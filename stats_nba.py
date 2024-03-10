@@ -7,7 +7,6 @@ from scipy.stats import zscore
 from scipy.stats import norm
 import pandas as pd
 import glob
-import os
 
 #######################################################################
 #API pull Data
@@ -55,8 +54,6 @@ def calculate_deviation(df, stat):
 #Date
 today_date = datetime.today().date()
 today_date_str = today_date.strftime('%Y-%m-%d')
-
-current_directory = os.getcwd()
 
 #######################################################################
 #Date Stuff
@@ -147,27 +144,19 @@ data_stats_df['date'] = pd.to_datetime(data_stats_df['date']).dt.strftime('%m/%d
 
 #Import Old data
 file_paths = glob.glob('C:\\Users\\Brian\\Main Folder\\EV Bets\\stats_full_data\\*.csv')
-file_paths = glob.glob(os.path.join(current_directory,'data', 'stats_full_data', '*.csv'))
 
 # Read the CSV files into a DataFrame
 df = pd.concat((pd.read_csv(file) for file in file_paths), ignore_index=True)
 
 #Export current day data before concat
-#data_stats_df.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\stats_full_data\data_stats_'+today_date_str+'.csv', header=True)
-filename_data_stats_df = 'data_stats_'+today_date_str+'.csv'
-full_path_data_stats_df = os.path.join(current_directory, 'data', 'stats_full_data', filename_data_stats_df)
-data_stats_df.to_csv(full_path_data_stats_df, header=True)
+data_stats_df.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\stats_full_data\data_stats_'+today_date_str+'.csv', header=True)
 
 #Concat data
 data_stats_df = pd.concat([data_stats_df, df], ignore_index=True)
 
 #######################################################################
 #Team Fix
-#team_fix = pd.read_csv(r'C:\Users\Brian\Main Folder\EV Bets\lookups\player_team_fix.csv')
-
-file_path_team_fix = os.path.join(current_directory, 'lookups', 'player_team_fix.csv')
-team_fix = pd.read_csv(file_path_team_fix)
-
+team_fix = pd.read_csv(r'C:\Users\Brian\Main Folder\EV Bets\lookups\player_team_fix.csv')
 name_team_dict = dict(zip(team_fix['Name'], team_fix['Team']))
 data_stats_df['team'] = data_stats_df['First Last Name'].map(name_team_dict).fillna(data_stats_df['team'])
 
@@ -195,10 +184,7 @@ for stat in stats_for_variance:
 
 #######################################################################
 #Filter out players
-#data_stats_df['minutes'] = data_stats_df['minutes'].astype(int)
-#data_stats_df = data_stats_df[data_stats_df['minutes'] >= 5]
-data_stats_df['minutes'] = pd.to_numeric(data_stats_df['minutes'], errors='coerce')
-data_stats_df['minutes'] = data_stats_df['minutes'].fillna(0).astype(int)
+data_stats_df['minutes'] = data_stats_df['minutes'].astype(int)
 data_stats_df = data_stats_df[data_stats_df['minutes'] >= 5]
 
 # Subtract 6 hours because randomly the data is set at gmt
@@ -215,12 +201,7 @@ data_stats_df = data_stats_df.sort_values(['player_id', 'date'])
 data_stats_df = data_stats_df.groupby('player_id').tail(10)
 
 #For last 10 games stats charts
-#data_stats_df.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\stats_data_last10\data_stats_last_10.csv', header=True)
-filename_last10games_single = 'data_stats_last_10.csv'
-full_path_last10games_single = os.path.join(current_directory, 'data', 'stats_data_last10', filename_last10games_single)
-data_stats_df.to_csv(full_path_last10games_single, header=True)
-
-
+data_stats_df.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\stats_data_last10\data_stats_last_10.csv', header=True)
 
 #######################################################################
 #Group by players and sum stats
@@ -270,8 +251,4 @@ grouped_df['count'] = data_stats_df[group_columns].groupby(group_columns).size()
 
 #######################################################################
 #OUTPUTS for merging stats onto odds data for calcs
-
-filename_last10games = 'data_stats_last10games_'+today_date_str+'.csv'
-full_path_last10games = os.path.join(current_directory, 'data', 'stats_data_group', filename_last10games)
-grouped_df.to_csv(full_path_last10games, header=True)
-
+grouped_df.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\stats_data_group\data_stats_last10games_'+today_date_str+'.csv', header=True)

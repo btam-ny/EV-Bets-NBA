@@ -6,7 +6,6 @@ import time
 from scipy.stats import zscore
 from scipy.stats import norm
 import glob
-import os
 
 #######################################################################
 #https://rapidapi.com/api-sports/api/api-nba
@@ -54,8 +53,6 @@ def calculate_avg(df,stat,games):
 
 today_date = datetime.today().date()
 today_date_str = today_date.strftime('%Y-%m-%d')
-
-current_directory = os.getcwd()
 
 #######################################################################
 
@@ -129,19 +126,11 @@ data_stats_df = pd.merge(data_stats_df, games_list_df, how='left', left_on='game
 
 #######################################################################
 #Load in historical data
-
-file_paths = glob.glob(os.path.join(current_directory, 'team_defense_full_data', '*.csv'))
-
-#file_paths = glob.glob('G:\\My Drive\\Code\\EV Bets\\team_defense_full_data\\*.csv')
+file_paths = glob.glob('G:\\My Drive\\Code\\EV Bets\\team_defense_full_data\\*.csv')
 df = pd.concat((pd.read_csv(file) for file in file_paths), ignore_index=True)
 
 #Export todays data
-filename_defense_full_stats = 'team_data_defense_full_'+today_date_str+'.csv'
-full_path_data_stats = os.path.join(current_directory, 'team_defense_full_data', filename_defense_full_stats)
-
-data_stats_df.to_csv(full_path_data_stats, header=True)
-
-
+data_stats_df.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\team_defense_full_data\team_data_defense_full_'+today_date_str+'.csv', header=True)
 
 #Concat data
 data_stats_df = pd.concat([data_stats_df, df], ignore_index=True)
@@ -191,8 +180,4 @@ defense_df = defense_df[keep_cols]
 
 #######################################################################
 #Export
-
-filename_defense_df_10 = 'team_data_defense_last10_'+today_date_str+'.csv'
-full_path_defense_df = os.path.join(current_directory,'data','team_defense_data', filename_defense_df_10)
-defense_df.to_csv(full_path_defense_df , header=True)
-
+defense_df.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\team_defense_data\team_data_defense_last10_'+today_date_str+'.csv', header=True)

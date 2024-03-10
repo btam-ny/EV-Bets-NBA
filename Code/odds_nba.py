@@ -130,5 +130,5 @@ today_date_str = today_date.strftime('%Y-%m-%d')
 current_directory = os.getcwd()
 
 filename_data_prop = 'data_points_'+today_date_str+'.csv'
-full_path_data_prop = os.path.join(current_directory, 'team_defense_data', filename_data_prop)
+full_path_data_prop = os.path.join(current_directory, 'data', 'prop_data', filename_data_prop)
 flattened_data_prop.to_csv(full_path_data_prop , header=True)
