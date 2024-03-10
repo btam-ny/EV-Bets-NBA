@@ -146,7 +146,7 @@ data_stats_df['date'] = pd.to_datetime(data_stats_df['date']).dt.strftime('%m/%d
 #data_stats_df['date'] = data_stats_df['date'] - pd.Timedelta(hours=6)
 
 #Import Old data
-file_paths = glob.glob('C:\\Users\\Brian\\Main Folder\\EV Bets\\stats_full_data\\*.csv')
+#file_paths = glob.glob('C:\\Users\\Brian\\Main Folder\\EV Bets\\stats_full_data\\*.csv')
 file_paths = glob.glob(os.path.join(current_directory,'data', 'stats_full_data', '*.csv'))
 
 # Read the CSV files into a DataFrame
