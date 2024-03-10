@@ -15,7 +15,6 @@ import os
 current_directory = os.getcwd()
 today_date = datetime.today().date()
 today_date_str = today_date.strftime('%Y-%m-%d')
-#C:\Users\Brian\Main Folder\EV Bets
 
 #Load in prop odds
 file_path_prop_odds = os.path.join(current_directory, 'prop_data', 'data_points_'+ today_date_str +'.csv')
