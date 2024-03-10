@@ -68,10 +68,7 @@ print('Used requests', odds_response.headers['x-requests-used'])
 
 
 df_id = pd.json_normalize(odds_json)
-df_id.to_csv(r'G:\My Drive\Code\EV Bets\test.csv', header=True)
 df_id = df_id[['id']]
-
-df_id.to_csv(r'G:\My Drive\Code\EV Bets\test2.csv', header=True)
 
 #######################################################################
 # Event response for player probs
@@ -107,6 +104,7 @@ for market in PROP_MARKETS:
                                                  ['bookmakers', 'markets', 'last_update']], 
                                                 record_prefix='outcomes_', errors='ignore')
         flattened_data_prop_list.append(flattened_data_prop)
+        print('Event_id Pull '+str(EVENT_ID)+' Complete')
 
 flattened_data_prop = pd.concat(flattened_data_prop_list)
 
@@ -132,3 +130,6 @@ current_directory = os.getcwd()
 filename_data_prop = 'data_points_'+today_date_str+'.csv'
 full_path_data_prop = os.path.join(current_directory, 'data', 'prop_data', filename_data_prop)
 flattened_data_prop.to_csv(full_path_data_prop , header=True)
+
+print('Odds Pull Complete')
+

@@ -189,3 +189,4 @@ points_merge.to_csv(full_path_points_merge, header=True)
 filename_points_merge_single = 'EV_Output.csv'
 full_path_filename_points_merge_single = os.path.join(current_directory, 'data','output_today', filename_points_merge_single)
 points_merge.to_csv(full_path_filename_points_merge_single, header=True)
+print('Output Complete. You can refresh Power')

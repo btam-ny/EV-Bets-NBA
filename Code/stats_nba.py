@@ -35,10 +35,6 @@ def pullGameStats(gameID):
     querystring = {"game":gameID}
     local_header = headers
     response = requests.get(url, headers=local_header, params=querystring)
-    if response.status_code != 200:
-        print(f'Failed to get odds: status_code {response.status_code}, response body {response.text}')
-    else:
-        print('Stat pull Success')
     return response
 
 #Time frame for yesterday
@@ -125,6 +121,7 @@ for EVENT_ID in EVENT_IDS:
             "plusMinus": i['plusMinus']
         }
         data_stats.append(row)
+        print('Pulling Stats for Game ID:', i['game']['id'])
 
 #######################################################################
 #Data Cleaning and column creation
@@ -141,19 +138,16 @@ data_stats_df['Rebounds_Assist'] = data_stats_df['totReb'] + data_stats_df['assi
 
 # Get the file paths
 data_stats_df = pd.merge(data_stats_df, games_list_df, how='left', left_on='game_id', right_on='id')
-#data_stats_df['date'] = pd.to_datetime(data_stats_df['date'])
 data_stats_df['date'] = pd.to_datetime(data_stats_df['date']).dt.strftime('%m/%d/%Y %I:%M:%S %p')
-#data_stats_df['date'] = data_stats_df['date'] - pd.Timedelta(hours=6)
+
 
 #Import Old data
-#file_paths = glob.glob('C:\\Users\\Brian\\Main Folder\\EV Bets\\stats_full_data\\*.csv')
 file_paths = glob.glob(os.path.join(current_directory,'data', 'stats_full_data', '*.csv'))
 
 # Read the CSV files into a DataFrame
 df = pd.concat((pd.read_csv(file) for file in file_paths), ignore_index=True)
 
 #Export current day data before concat
-#data_stats_df.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\stats_full_data\data_stats_'+today_date_str+'.csv', header=True)
 filename_data_stats_df = 'data_stats_'+today_date_str+'.csv'
 full_path_data_stats_df = os.path.join(current_directory, 'data', 'stats_full_data', filename_data_stats_df)
 data_stats_df.to_csv(full_path_data_stats_df, header=True)
@@ -163,7 +157,6 @@ data_stats_df = pd.concat([data_stats_df, df], ignore_index=True)
 
 #######################################################################
 #Team Fix
-#team_fix = pd.read_csv(r'C:\Users\Brian\Main Folder\EV Bets\lookups\player_team_fix.csv')
 
 file_path_team_fix = os.path.join(current_directory, 'lookups', 'player_team_fix.csv')
 team_fix = pd.read_csv(file_path_team_fix)
@@ -195,8 +188,6 @@ for stat in stats_for_variance:
 
 #######################################################################
 #Filter out players
-#data_stats_df['minutes'] = data_stats_df['minutes'].astype(int)
-#data_stats_df = data_stats_df[data_stats_df['minutes'] >= 5]
 data_stats_df['minutes'] = pd.to_numeric(data_stats_df['minutes'], errors='coerce')
 data_stats_df['minutes'] = data_stats_df['minutes'].fillna(0).astype(int)
 data_stats_df = data_stats_df[data_stats_df['minutes'] >= 5]
@@ -215,7 +206,6 @@ data_stats_df = data_stats_df.sort_values(['player_id', 'date'])
 data_stats_df = data_stats_df.groupby('player_id').tail(10)
 
 #For last 10 games stats charts
-#data_stats_df.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\stats_data_last10\data_stats_last_10.csv', header=True)
 filename_last10games_single = 'data_stats_last_10.csv'
 full_path_last10games_single = os.path.join(current_directory, 'data', 'stats_data_last10', filename_last10games_single)
 data_stats_df.to_csv(full_path_last10games_single, header=True)
@@ -274,4 +264,5 @@ grouped_df['count'] = data_stats_df[group_columns].groupby(group_columns).size()
 filename_last10games = 'data_stats_last10games_'+today_date_str+'.csv'
 full_path_last10games = os.path.join(current_directory, 'data', 'stats_data_group', filename_last10games)
 grouped_df.to_csv(full_path_last10games, header=True)
+print('Stat Pull Compplete')
 

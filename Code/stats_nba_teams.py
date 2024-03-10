@@ -194,4 +194,5 @@ defense_df = defense_df[keep_cols]
 filename_defense_df_10 = 'team_data_defense_last10_'+today_date_str+'.csv'
 full_path_defense_df = os.path.join(current_directory,'data','team_defense_data', filename_defense_df_10)
 defense_df.to_csv(full_path_defense_df , header=True)
+print('Team Pull Complete')
 
