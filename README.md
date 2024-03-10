@@ -42,5 +42,5 @@ Pulls in prop odds from bookmakers, and last 10 day stats to calculate if a curr
   - Upcoming Features
     - Incorporating injuries and specific lineups teams play for adjusting player stats
     - Adding in additional stats
-    - Adding in information on alternate prop lines
+    - Adding in information on alternate prop lines and what to adjust alternative prop lines to to maximize EV
   
