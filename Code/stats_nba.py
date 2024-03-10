@@ -264,5 +264,5 @@ grouped_df['count'] = data_stats_df[group_columns].groupby(group_columns).size()
 filename_last10games = 'data_stats_last10games_'+today_date_str+'.csv'
 full_path_last10games = os.path.join(current_directory, 'data', 'stats_data_group', filename_last10games)
 grouped_df.to_csv(full_path_last10games, header=True)
-print('Stat Pull Compplete')
+print('Stat Pull Complete')
 
