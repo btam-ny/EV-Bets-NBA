@@ -12,7 +12,7 @@ parser = argparse.ArgumentParser(description='Sample V4')
 parser.add_argument('--api-key', type=str, default='')
 args = parser.parse_args()
 
-API_KEY = args.api_key or '8f6ac42e4584c9bacffc9e1a0fec95a3'
+API_KEY = args.api_key or "ENTER API KEY HERE"
 
 #######################################################################
 # Sport key

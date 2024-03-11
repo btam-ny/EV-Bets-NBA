@@ -12,7 +12,7 @@ import os
 #API Info
 #https://rapidapi.com/api-sports/api/api-nba
 headers = {
-	"X-RapidAPI-Key": "7f15289082msh2b80f8151be1e74p16fba4jsnff9ea5c99f8d",
+	"X-RapidAPI-Key": "ENTER API KEY HERE",
 	"X-RapidAPI-Host": "api-nba-v1.p.rapidapi.com"
 }
 api = "https://api-nba-v1.p.rapidapi.com/"
