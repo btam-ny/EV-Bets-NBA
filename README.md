@@ -4,6 +4,15 @@ Pulls in prop odds from bookmakers, and last 10 day stats to calculate if a curr
 - Tools
     - Python: Used to pull data from APIs, cleaning, calculations and organizing dataframes
     - PowerBI: Used for data modeling and visualization
+ 
+- APIs used
+    - Rapid API-NBA: For Stats
+        - https://rapidapi.com/api-sports/api/api-nba
+    - The Odds API: For Prop Odds
+        - https://the-odds-api.com
+    - Environmental Variables needed to access. Place in Code folder
+        - stats_api_key = "INSERT STATS API HERE"
+        - odds_api_key = "INSERT ODDS API HERE"
 
 - Code
     - odds_nba: Pulls in prop odds for the current day
