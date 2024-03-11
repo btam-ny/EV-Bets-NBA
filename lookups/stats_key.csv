@@ -1,0 +1,9 @@
+﻿Attribute From Stats,Attribute From Odds,Name,Order
+points,player_points,Points,1
+assists,player_assists,Assists,2
+totReb,player_rebounds,Rebounds,3
+Points_Rebounds_Assist,player_points_rebounds_assists,P+R+A,5
+Points_Rebounds,player_points_rebounds,P+R,7
+Points_Assist,player_points_assists,P+A,6
+Rebounds_Assist,player_rebounds_assists,R+A,8
+tpm,player_threes,Threes,4
