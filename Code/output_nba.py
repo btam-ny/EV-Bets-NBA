@@ -130,37 +130,21 @@ merge = pd.merge(merge, defensive_rating, how='left', left_on='opposing team', r
 
 
 #Add Outcome Last 10 Game Average - adjusted for specific stat
-merge['Outcome Last 30 Avg'] = merge.apply(lambda row: row['points_avg'] if row['bookmakers.markets.key'] == 'player_points' 
-                                 else (row['assists_avg'] if row['bookmakers.markets.key'] == 'player_assists' 
-                                       else (row['totReb_avg'] if row['bookmakers.markets.key'] == 'player_rebounds' 
-                                             else (row['tpm_avg'] if row['bookmakers.markets.key'] == 'player_threes'
-                                                    else (row['Points_Rebounds_Assist_avg'] if row['bookmakers.markets.key'] == 'player_points_rebounds_assists'
-                                                            else (row['Points_Rebounds_avg'] if row['bookmakers.markets.key'] == 'player_points_rebounds'
-                                                                  else (row['Points_Assist_avg'] if row['bookmakers.markets.key'] == 'player_points_assists'
-                                                                        else (row['Rebounds_Assist_avg'] if row['bookmakers.markets.key'] == 'player_rebounds_assists'
-                                                                              else np.nan))))))), axis=1)
+keys_to_columns = {
+    'player_points': ['points_avg', 'points_std', 'points_eff'],
+    'player_assists': ['assists_avg', 'assists_std', 'assists_eff'],
+    'player_rebounds': ['totReb_avg', 'totReb_std', 'totReb_eff'],
+    'player_threes': ['tpm_avg', 'tpm_std', 'tpm_eff'],
+    'player_points_rebounds_assists': ['Points_Rebounds_Assist_avg', 'Points_Rebounds_Assist_std', 'Points_Rebounds_Assist_eff'],
+    'player_points_rebounds': ['Points_Rebounds_avg', 'Points_Rebounds_std', 'Points_Rebounds_eff'],
+    'player_points_assists': ['Points_Assist_avg', 'Points_Assist_std', 'Points_Assist_eff'],
+    'player_rebounds_assists': ['Rebounds_Assist_avg', 'Rebounds_Assist_std', 'Rebounds_Assist_eff']
+}
 
-#Add Outcome of Last 30 day Standard Deviation - adjusted for specific stat
-merge['Outcome Last 30 STD'] = merge.apply(lambda row: row['points_std'] if row['bookmakers.markets.key'] == 'player_points' 
-                                 else (row['assists_std'] if row['bookmakers.markets.key'] == 'player_assists' 
-                                       else (row['totReb_std'] if row['bookmakers.markets.key'] == 'player_rebounds' 
-                                             else (row['tpm_std'] if row['bookmakers.markets.key'] == 'player_threes'
-                                                    else (row['Points_Rebounds_Assist_std'] if row['bookmakers.markets.key'] == 'player_points_rebounds_assists'
-                                                            else (row['Points_Rebounds_std'] if row['bookmakers.markets.key'] == 'player_points_rebounds'
-                                                                  else (row['Points_Assist_std'] if row['bookmakers.markets.key'] == 'player_points_assists'
-                                                                        else (row['Rebounds_Assist_std'] if row['bookmakers.markets.key'] == 'player_rebounds_assists'
-                                                                              else np.nan))))))), axis=1)
+new_columns = ['Outcome Last 30 Avg', 'Outcome Last 30 STD', 'Defensive Rating Adjustment']
 
-#Add outcome of defensive ratins - adjusted for specific stat
-merge['Defensive Rating Adjustment'] = merge.apply(lambda row: row['points_eff'] if row['bookmakers.markets.key'] == 'player_points' 
-                                 else (row['assists_eff'] if row['bookmakers.markets.key'] == 'player_assists' 
-                                       else (row['totReb_eff'] if row['bookmakers.markets.key'] == 'player_rebounds' 
-                                             else (row['tpm_eff'] if row['bookmakers.markets.key'] == 'player_threes'
-                                                    else (row['Points_Rebounds_Assist_eff'] if row['bookmakers.markets.key'] == 'player_points_rebounds_assists'
-                                                            else (row['Points_Rebounds_eff'] if row['bookmakers.markets.key'] == 'player_points_rebounds'
-                                                                  else (row['Points_Assist_eff'] if row['bookmakers.markets.key'] == 'player_points_assists'
-                                                                        else (row['Rebounds_Assist_eff'] if row['bookmakers.markets.key'] == 'player_rebounds_assists'
-                                                                              else np.nan))))))), axis=1)
+for i, new_column in enumerate(new_columns):
+    merge[new_column] = merge.apply(lambda row: row[keys_to_columns[row['bookmakers.markets.key']][i]] if row['bookmakers.markets.key'] in keys_to_columns else np.nan, axis=1)
 
 
 #######################################################################
