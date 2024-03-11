@@ -9,13 +9,15 @@ import pandas as pd
 import glob
 import argparse
 import os
+from dotenv import load_dotenv, dotenv_values
 
 #######################################################################
 parser = argparse.ArgumentParser(description='Sample V4')
 parser.add_argument('--api-key', type=str, default='')
 args = parser.parse_args()
 
-API_KEY = args.api_key or "ENTER API KEY HERE"
+load_dotenv()
+API_KEY = args.api_key or os.getenv("odds_api_key")
 
 #######################################################################
 # Sport key

@@ -8,12 +8,16 @@ from scipy.stats import norm
 import pandas as pd
 import glob
 import os
+from dotenv import load_dotenv, dotenv_values
 
 #######################################################################
 #API pull Data
 #https://rapidapi.com/api-sports/api/api-nba
+
+load_dotenv()
+
 headers = {
-	"X-RapidAPI-Key": "ENTER API KEY HERE",
+	"X-RapidAPI-Key": os.getenv("stats_api_key"),
 	"X-RapidAPI-Host": "api-nba-v1.p.rapidapi.com"
 }
 api = "https://api-nba-v1.p.rapidapi.com/"
