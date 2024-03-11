@@ -27,7 +27,7 @@ file_path_last_10_stats = os.path.join(current_directory, 'data', 'stats_data_gr
 last_10_stats = pd.read_csv(file_path_last_10_stats)
 
 #Load in Defense
-file_path_defensive_rating = os.path.join(current_directory, 'data', 'team_defense_data', 'team_data_defense_last10_'+ today_date_str +'.csv')
+file_path_defensive_rating = os.path.join(current_directory, 'data', 'team_defense_data', 'team_data_defense_last10.csv')
 defensive_rating = pd.read_csv(file_path_defensive_rating)
 
 #Load in name/team fixes
