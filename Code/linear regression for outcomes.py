@@ -31,7 +31,8 @@ file_path_team_name_fix = os.path.join(current_directory, 'lookups', 'team_name_
 team_name_fix = pd.read_csv(file_path_team_name_fix)
 
 #####################################################################
-#Team Name Fixes and Cleaning
+#Team Name Fixes and Cleaning. Need to organize this more...
+
 # Create a mapping from 'team name' to 'team name odds'
 team_name_mapping = team_name_fix.set_index('team name')['team name odds'].to_dict()
 
@@ -47,7 +48,7 @@ df['Points_Rebounds'] = df['points'] + df['totReb']
 df['Points_Assist'] = df['points']+ df['assists']
 df['Rebounds_Assist'] = df['totReb'] + df['assists']
 
-#unpivot the data
+#unpivot the data. Melt for better stacking
 df_melted = df.melt(id_vars=['First Last Name', 'team','Opposing Team'], value_vars=['points', 'assists','totReb','tpm','Points_Rebounds_Assist','Points_Rebounds','Points_Assist','Rebounds_Assist'], var_name='Statistic', value_name='Value')
 
 def_melt = defensive_rating.melt(id_vars=['team name'], value_vars=['points_eff','assists_eff','tpm_eff','totReb_eff','Points_Rebounds_Assist_eff','Points_Rebounds_eff','Points_Assist_eff','Rebounds_Assist_eff'], var_name='Statistic', value_name='Defensive Rating')
@@ -55,7 +56,8 @@ def_melt = defensive_rating.melt(id_vars=['team name'], value_vars=['points_eff'
 def_melt['Statistic'] = def_melt['Statistic'].str.replace('_eff', '')
 
 #####################################################################
-#Merging Historical stats with defensive ratings
+#Merging Historical stats with defensive ratings of teams
+
 merged_df = df_melted.merge(def_melt, how='left', left_on=['Opposing Team', 'Statistic'], right_on=['team name', 'Statistic'])
 merged_df = merged_df.drop('team name', axis=1)
 
@@ -65,8 +67,9 @@ name_fix_mapping = name_fix.set_index('Original Name')['Fixed Name'].to_dict()
 # Replace 'team name' in defensive_ratings
 prop_current['outcomes_description'] = prop_current['outcomes_description'].map(name_fix_mapping).fillna(prop_current['outcomes_description'])
 
+
 #####################################################################
-#Get Current Data and Data Cleaning
+#Getting data for team a player is playing today
 
 prop_current = prop_current[['outcomes_description','home_team','away_team']]
 prop_current = prop_current.drop_duplicates()
@@ -86,18 +89,24 @@ prop_current_team = prop_current_team.rename(columns={'Opposing Team': 'Today Op
 team_name_mapping_2 = team_name_fix.set_index('name fix')['team name odds'].to_dict()
 prop_current_team['Today Opposing Team'] = prop_current_team['Today Opposing Team'].map(team_name_mapping_2).fillna(prop_current_team['Today Opposing Team'])
 
-
+#Use prop data to find team they are currently playing
 merged_df = merged_df.merge(prop_current_team, how='inner', left_on=['First Last Name'], right_on=['First Last Name'])
-
-
 def_melt_today = def_melt.rename(columns={'Defensive Rating': 'Today Defensive Rating'})
+
+#Get Defensive rating based on currently played team
 merged_df = merged_df.merge(def_melt_today, how='left', left_on=['Today Opposing Team', 'Statistic'], right_on=['team name', 'Statistic'])
 
+#For Jupyter Test
+print(prop_current_team.head())
+jupyter_test = pd.DataFrame(merged_df)
+full_path_jupyter = os.path.join(current_directory, 'data','linear regression predictions', 'jupyter_test.csv')
+jupyter_test.to_csv(full_path_jupyter, header=True)
+
+
 #####################################################################
-#Linear Regression
+#Create Dictionaries and filter source data for Linear Regression
 
 filtered_df = merged_df[merged_df['Value'] != 0]
-
 
 filtered_df_dedup = filtered_df[['First Last Name','Statistic','Today Defensive Rating']]
 filtered_df_dedup = filtered_df_dedup.drop_duplicates()
@@ -106,6 +115,9 @@ filtered_df_dedup.head()
 
 # Get unique combinations of 'First Last Name' and 'Statistic'
 combinations = filtered_df_dedup[['First Last Name', 'Statistic']].drop_duplicates().values
+
+#####################################################################
+#Linear Regression
 
 # Initialize a list to store predictions
 predictions = []
@@ -117,11 +129,9 @@ for first_last_name, statistic in combinations:
     
     # Check if there are enough data points to fit the model
     if subset.shape[0] >= 2:
-        # Define the features and target
+        # Define the features and target and Fit Model
         x = subset[['Defensive Rating']]
         y = subset['Value']
-        
-        # Fit the model
         reg = LinearRegression()
         reg.fit(x, y)
         
@@ -138,6 +148,8 @@ for first_last_name, statistic in combinations:
 # Convert the list to a DataFrame
 predictions_df = pd.DataFrame(predictions, columns=['First Last Name', 'Statistic', 'Prediction'])
 
+#####################################################################
+#Change Names for uniformity
 replace_dict = {
     'points': 'player_points',
     'assists': 'player_assist',
@@ -151,6 +163,8 @@ replace_dict = {
 
 predictions_df['Statistic'] = predictions_df['Statistic'].replace(replace_dict)
 
+#####################################################################
+#Outputs
 filename_predictions_df = 'predictions_df.csv'
 full_path_predictions_df = os.path.join(current_directory, 'data','linear regression predictions', filename_predictions_df)
 predictions_df.to_csv(full_path_predictions_df, header=True)
