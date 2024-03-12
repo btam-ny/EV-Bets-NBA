@@ -1,5 +1,6 @@
 NBA Prop Odds Expected Value
-Pulls in prop odds from bookmakers, and last 10 day stats to calculate if a current prop is positive or negative EV (expected value)
+Pulls in prop odds from bookmakers, last 10 day stats to calculate if a current prop is positive or negative EV (expected value)
+Uses linear regression to predict the outcome of a players stats based on opposing teams defensive efficiency
 
 - Tools
     - Python: Used to pull data from APIs, cleaning, calculations and organizing dataframes
@@ -24,6 +25,8 @@ Pulls in prop odds from bookmakers, and last 10 day stats to calculate if a curr
   - Data is pulled in from 2 seperate APIs (odds and stats)
   - Prop Stats included
       - Points, Assists, Rebounds, Threes, Points + Rebounds + Assists, Points + Rebounds, Points + Assists, Rebounds + Assists
+  - Uses linear regression to predict the outcome of the stats above
+      - Model is trained on players previous outcomes vs. defensive efficiencies and predicted based on the team they are currently playing
   - Defensive Adjustments
       - Player stats are adjusted based on the amount of stats (points/reb/assists/threes/etc..) the team they are playing is allowing over the last 10 games
         - IE. Jalen Brunson is averaging 30 points over the last 10 games. He is playing the Timberwolves who allow 95% points compared to league average. His expected points are adjusted to 28.5 (.95 *30)
