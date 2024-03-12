@@ -96,11 +96,8 @@ for date in dates:
 
 flattened_date_prop = pd.concat(flattened_data_date_list)
 
-flattened_date_prop.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\stats_full_data\test.csv', header=True)
-
 df_id = flattened_date_prop[['id','commence_time']]
 
-#df_id.to_csv(r'G:\My Drive\Code\EV Bets\test2.csv', header=True)
 
 ######################################
 
@@ -147,7 +144,6 @@ flattened_data_prop = flattened_data_prop.drop_duplicates()
 #######################################################################
 
 #Export test to desktop
-#flattened_data_prop.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\prop_data\data_points_historical.csv', header=True)
 
 current_directory = os.getcwd()
 filename_flattened_data_prop = 'data_points_historical.csv'

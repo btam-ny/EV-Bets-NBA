@@ -151,7 +151,8 @@ data_stats_df.to_csv(full_path_data_stats, header=True)
 data_stats_df = pd.concat([data_stats_df, df], ignore_index=True)
 
 #Flip game ids for defensive stats and drop dupcliates
-data_stats_df = data_stats_df.groupby('game_id').apply(switch_team_name)
+data_stats_df = data_stats_df.groupby('game_id').apply(switch_team_name, include_groups=False)
+#data_stats_df = data_stats_df.groupby('game_id').apply(switch_team_name)
 data_stats_df = data_stats_df.drop_duplicates()
 
 # Keep only last 10 games

@@ -77,7 +77,9 @@ for date in dates:
     for i in games_json['response']:
         row = {
             "id": i['id'],
-            "date": i['date']['start']   #games_json['parameters']['date']
+            "date": i['date']['start'],   #games_json['parameters']['date']
+            "home_team": i['teams']['home']['name'],
+            "away_team": i['teams']['visitors']['name']
         }
         games_list.append(row)
 
@@ -85,6 +87,9 @@ for date in dates:
 EVENT_IDS = [game['id'] for game in games_list]
 
 games_list_df = pd.DataFrame(games_list)
+
+full_path_games_list_df = os.path.join(current_directory, 'data','full_game_list', 'game_list_'+today_date_str+'.csv')
+games_list_df.to_csv(full_path_games_list_df, header=True)
 
 #######################################################################
 #Pull data from each game
