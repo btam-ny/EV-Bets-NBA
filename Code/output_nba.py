@@ -37,6 +37,11 @@ name_fix = pd.read_csv(file_path_name_fix)
 file_path_team_name_fix = os.path.join(current_directory, 'lookups', 'team_name_fix.csv')
 team_name_fix = pd.read_csv(file_path_team_name_fix)
 
+#Load Linear Regression Predictions
+file_path_lr = os.path.join(current_directory, 'data', 'linear regression predictions', 'predictions_df.csv')
+lr_outcomes = pd.read_csv(file_path_lr)
+
+
 #######################################################################
 #Variables
 vig = 1.06775067750678 #Draft kings vig
@@ -151,7 +156,10 @@ for i, new_column in enumerate(new_columns):
 #CALCULATIONS
                                                                         
 #Adjusting Last 30 for Defensive Rating
-merge['Outcome Last 30 Avg Adjusted'] = merge['Outcome Last 30 Avg'] * merge['Defensive Rating Adjustment']
+#merge['Outcome Last 30 Avg Adjusted'] = merge['Outcome Last 30 Avg'] * merge['Defensive Rating Adjustment']
+merge = merge.merge(lr_outcomes, how='left', left_on=['outcomes_description','bookmakers.markets.key'], right_on=['First Last Name','Statistic'])
+
+merge = merge.rename(columns={'Prediction': 'Outcome Last 30 Avg Adjusted'})
 
 #Normalizing data on Variance to calculate percentage hit rate and EV
 points_merge = process_data(merge,'Outcome Last 30 Avg','Outcome Last 30 Avg Adjusted')
