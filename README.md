@@ -20,6 +20,7 @@ Uses linear regression to predict the outcome of a players stats based on opposi
     - odds_nba: Pulls in prop odds for the current day
     - stats_nba: Pulls in stats from players from the previous day and appends historical data
     - stats_nba_teams: Pulls in team stats from previous day and appends historical data
+    - linear_regression_for_outcomes: Performs a linear regression analysis to predict player outcomes against defenses
     - output_nba: Does the calculations and outputs files that can be fed into PowerBI
   
 - Features
