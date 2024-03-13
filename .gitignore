@@ -1,2 +1,6 @@
 Code/.env
 .gitignore
+Code/_test/game_list.py
+Code/_test/lr test pull for jupyter.py
+Code/_test/lr_test_data_org.ipynb
+Code/_test/odds_nba_historical.py

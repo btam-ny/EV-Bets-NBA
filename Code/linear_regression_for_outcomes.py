@@ -97,7 +97,6 @@ def_melt_today = def_melt.rename(columns={'Defensive Rating': 'Today Defensive R
 merged_df = merged_df.merge(def_melt_today, how='left', left_on=['Today Opposing Team', 'Statistic'], right_on=['team name', 'Statistic'])
 
 #For Jupyter Test
-print(prop_current_team.head())
 jupyter_test = pd.DataFrame(merged_df)
 full_path_jupyter = os.path.join(current_directory, 'data','linear regression predictions', 'jupyter_test.csv')
 jupyter_test.to_csv(full_path_jupyter, header=True)
