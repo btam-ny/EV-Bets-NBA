@@ -1,6 +1,7 @@
 NBA Prop Odds Expected Value
-Pulls in prop odds from bookmakers, last 10 day stats to calculate if a current prop is positive or negative EV (expected value)
-Uses linear regression to predict the outcome of a players stats based on opposing teams defensive efficiency
+
+Pulls in prop odds from bookmakers and historical stats to calculate if a current prop has positive or negative EV (expected value)
+Uses linear regression to predict the outcome of a players stats based on opposing teams defensive efficiency. Uses this predicted stat outcome to determine if a bookmakers lines have a positive or negative EV.
 
 - Tools
     - Python: Used to pull data from APIs, cleaning, calculations and organizing dataframes
@@ -27,10 +28,9 @@ Uses linear regression to predict the outcome of a players stats based on opposi
       - Points, Assists, Rebounds, Threes, Points + Rebounds + Assists, Points + Rebounds, Points + Assists, Rebounds + Assists
   - Uses linear regression to predict the outcome of the stats above
       - Model is trained on players previous outcomes vs. defensive efficiencies and predicted based on the team they are currently playing
-  - Defensive Adjustments
-      - Player stats are adjusted based on the amount of stats (points/reb/assists/threes/etc..) the team they are playing is allowing over the last 10 games
-        - IE. Jalen Brunson is averaging 30 points over the last 10 games. He is playing the Timberwolves who allow 95% points compared to league average. His expected points are adjusted to 28.5 (.95 *30)
-  - Adjusted player stats are fed into a normal distribution based on the player variance per game
+      - This is specific to the stat type and based on 'Stat' per possession
+        - IE. Assist allowed per possession is calculated per team, and compared to league average. This adjustment is fed into the model when analyzing player stats
+  - Adjusted player stats from linear regression are fed into a normal distribution based on the player variance per game
       - % Chance of hitting a players prop line is calculated and then compared to what the actual % the bookmakers calculated (Expected Value)
   - Shows multiple bookmakers odds for better decision making
   - Auto runs every morning using task scheduler and a batch file
@@ -55,4 +55,5 @@ Uses linear regression to predict the outcome of a players stats based on opposi
     - Incorporating injuries and specific lineups teams play for adjusting player stats
     - Adding in additional stats
     - Adding in information on alternate prop lines and what to adjust alternative prop lines to to maximize EV
+    - Cleaning up data pull
   
