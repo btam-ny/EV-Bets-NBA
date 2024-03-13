@@ -157,10 +157,11 @@ for i, new_column in enumerate(new_columns):
                                                                         
 #Adjusting Last 30 for Defensive Rating
 #merge['Outcome Last 30 Avg Adjusted'] = merge['Outcome Last 30 Avg'] * merge['Defensive Rating Adjustment']
-merge = merge.merge(lr_outcomes, how='left', left_on=['outcomes_description','bookmakers.markets.key'], right_on=['First Last Name','Statistic'])
+
+#merge = merge.merge(lr_outcomes, how='left', left_on=['outcomes_description','bookmakers.markets.key'], right_on=['First Last Name','Statistic'])
+merge = merge.merge(lr_outcomes, how='left', left_on=['outcomes_description','bookmakers.markets.key'], right_on=['First Last Name','Statistic'], suffixes=('_merge', '_lr_outcomes'))
 
 merge = merge.rename(columns={'Prediction': 'Outcome Last 30 Avg Adjusted'})
-
 #Normalizing data on Variance to calculate percentage hit rate and EV
 points_merge = process_data(merge,'Outcome Last 30 Avg','Outcome Last 30 Avg Adjusted')
 

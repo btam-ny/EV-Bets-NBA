@@ -44,7 +44,7 @@ def pullGameStats(gameID):
 #Time frame for yesterday
 def get_last_day():
     base = datetime.today()
-    date_list = [base - timedelta(days=x) for x in range(0,2)]
+    date_list = [base - timedelta(days=x) for x in range(0,1)]
     return date_list
 
 #Deviation Calculation
@@ -144,11 +144,14 @@ data_stats_df['Points_Rebounds'] = data_stats_df['points'] + data_stats_df['totR
 data_stats_df['Points_Assist'] = data_stats_df['points']+ data_stats_df['assists']
 data_stats_df['Rebounds_Assist'] = data_stats_df['totReb'] + data_stats_df['assists']
 
+#data_stats_df['date'] = pd.to_datetime(data_stats_df['date']).dt.strftime('%m/%d/%Y %I:%M:%S %p')
 
 # Get the file paths
 data_stats_df = pd.merge(data_stats_df, games_list_df, how='left', left_on='game_id', right_on='id')
-data_stats_df['date'] = pd.to_datetime(data_stats_df['date']).dt.strftime('%m/%d/%Y %I:%M:%S %p')
 
+# Convert date strings to datetime
+data_stats_df['date'] = pd.to_datetime(data_stats_df['date']).dt.tz_convert(None)
+data_stats_df['date'] = data_stats_df['date'].dt.strftime('%-m/%-d/%Y %I:%M:%S %p')
 
 #Import Old data
 file_paths = glob.glob(os.path.join(current_directory,'data', 'stats_full_data', '*.csv'))
@@ -203,9 +206,27 @@ data_stats_df['minutes'] = pd.to_numeric(data_stats_df['minutes'], errors='coerc
 data_stats_df['minutes'] = data_stats_df['minutes'].fillna(0).astype(int)
 data_stats_df = data_stats_df[data_stats_df['minutes'] >= 5]
 
+#######################################################################
 # Subtract 6 hours because the time zone is GMT and some of the night games leak over to the next day
-data_stats_df['date'] = pd.to_datetime(data_stats_df['date'], format='%m/%d/%Y %I:%M:%S %p')- pd.Timedelta(hours=6)
-data_stats_df['date'] = data_stats_df['date'].dt.date
+#print(data_stats_df['date'].unique())
+
+# Convert date strings using the format "%Y-%m-%d %H:%M:%S"
+data_stats_df['date'] = pd.to_datetime(data_stats_df['date'], format='%Y-%m-%d %H:%M:%S', errors='coerce')
+
+# Find any NaT values
+nat_rows = data_stats_df['date'].isna()
+
+# Convert any remaining date strings using the format "%m/%d/%Y %H:%M"
+data_stats_df.loc[nat_rows, 'date'] = pd.to_datetime(data_stats_df.loc[nat_rows, 'date'], format='%m/%d/%Y %H:%M', errors='coerce')
+
+# Subtract 6 hours from each datetime
+data_stats_df['date'] = data_stats_df['date'] - pd.Timedelta(hours=6)
+
+# Convert datetime to the desired format
+data_stats_df['date'] = data_stats_df['date'].dt.strftime('%-m/%-d/%Y %I:%M:%S %p')
+
+
+#######################################################################
 
 #Drop duplicates in case of overlap
 data_stats_df = data_stats_df.drop_duplicates(subset=['player_id', 'game_id'])
