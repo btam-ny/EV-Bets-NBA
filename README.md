@@ -30,24 +30,30 @@ Uses linear regression to predict the outcome of a players stats based on opposi
   - Uses linear regression to predict the outcome of the stats above
       - Model is trained on players previous outcomes vs. defensive efficiencies and predicted based on the team they are currently playing
       - This is specific to the stat type and based on 'Stat' per possession
-        - IE. Assist allowed per possession is calculated per team, and compared to league average. This adjustment is fed into the model when analyzing player stats
+        - IE. Assist allowed per possession is calculated per team, and compared to league average. This adjustment is fed into the model with players past performances against similarily rated defenses. An outcome is projected based on who the player is currently playing
   - Adjusted player stats from linear regression are fed into a normal distribution based on the player variance per game
       - % Chance of hitting a players prop line is calculated and then compared to what the actual % the bookmakers calculated (Expected Value)
+  - Shows historical prop line for tracking changes in bookmaker odds
   - Shows multiple bookmakers odds for better decision making
   - Auto runs every morning using task scheduler and a batch file
  
 - Data Modeling and Data Visualization done in Power BI
   - Player Profile: Shows last 10 game stats of players playing today
     - Toggles for Points/Assists/Rebounds/Threes/etc..
+    - Togle Plyer up top
     - Shows Over/Under, and hit rate over last 10 games
-    - Calculates expected outcome (based on defense)
+    - Calculates expected outcome (based on predicted outcome of Linear  Regression vs. defenses)
     - Shows the expected value for the over/under as well as variance in stats
+      - Expected value is: (Odds calculated by model of hiting) / (Odds from bookmaker: True Odds with Vig taken out)
   - Best Plays: Shows positive Expected Value and low variance plays
     - Filter by stats, bookmaker and team
     - Shows Expected value by Over/Under and all prop stats
-  - Hit Rate with Matchup
+  - Full Data Set
+    - Most of the data available for sorting and filtering
+  - Hit Rate with Matchup: Over/Under
     - Shows plays by hit rate over the last 10 games
     - Shows Expected Value and Defensive ratings to make better decisions
+    - Seperated into Over and Under
   - Yesterdays Results
     - Shows the lines from yesterday and if a player hit the over or under
     - Included a dashboard for individual players
@@ -57,4 +63,5 @@ Uses linear regression to predict the outcome of a players stats based on opposi
     - Adding in additional stats
     - Adding in information on alternate prop lines and what to adjust alternative prop lines to to maximize EV
     - Cleaning up data pull
+    - Defense of team against specific positions
   
