@@ -40,7 +40,7 @@ def pullTeamStats(gameID):
 
 def get_last_game():
     base = datetime.today()
-    date_list = [base - timedelta(days=x) for x in range(0,1)]
+    date_list = [base - timedelta(days=x) for x in range(0,5)]
     return date_list
 
 def switch_team_name(group):
