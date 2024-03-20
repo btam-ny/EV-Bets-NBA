@@ -234,8 +234,6 @@ data_stats_df = data_stats_df.drop_duplicates(subset=['player_id', 'game_id'])
 # Sort by 'player_id' and 'date'
 data_stats_df = data_stats_df.sort_values(['player_id', 'date'])
 
-data_stats_df.to_csv(r'C:\Users\Brian\Main Folder\EV Bets\test.csv', index = False)
-
 # Keep only the last 10 rows for each 'player_id'
 data_stats_df = data_stats_df.groupby('player_id').tail(10)
 
