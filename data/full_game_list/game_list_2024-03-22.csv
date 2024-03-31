@@ -1,0 +1,32 @@
+,id,date,home_team,away_team
+0,13554,2024-03-22T00:00:00.000Z,Houston Rockets,Chicago Bulls
+1,13555,2024-03-22T00:00:00.000Z,Milwaukee Bucks,Brooklyn Nets
+2,13556,2024-03-22T00:30:00.000Z,Dallas Mavericks,Utah Jazz
+3,13557,2024-03-22T01:00:00.000Z,Denver Nuggets,New York Knicks
+4,13558,2024-03-22T02:30:00.000Z,Phoenix Suns,Atlanta Hawks
+5,13559,2024-03-22T23:00:00.000Z,Detroit Pistons,Boston Celtics
+6,13560,2024-03-22T23:00:00.000Z,Toronto Raptors,Oklahoma City Thunder
+7,13548,2024-03-21T00:00:00.000Z,Oklahoma City Thunder,Utah Jazz
+8,13549,2024-03-21T02:00:00.000Z,Golden State Warriors,Memphis Grizzlies
+9,13550,2024-03-21T02:00:00.000Z,Phoenix Suns,Philadelphia 76ers
+10,13551,2024-03-21T02:00:00.000Z,Portland Trail Blazers,LA Clippers
+11,13552,2024-03-21T23:00:00.000Z,Orlando Magic,New Orleans Pelicans
+12,13553,2024-03-21T23:00:00.000Z,Washington Wizards,Sacramento Kings
+13,13542,2024-03-20T00:00:00.000Z,San Antonio Spurs,Dallas Mavericks
+14,13543,2024-03-20T01:00:00.000Z,Minnesota Timberwolves,Denver Nuggets
+15,13544,2024-03-20T23:00:00.000Z,Cleveland Cavaliers,Miami Heat
+16,13545,2024-03-20T23:00:00.000Z,Detroit Pistons,Indiana Pacers
+17,13546,2024-03-20T23:30:00.000Z,Boston Celtics,Milwaukee Bucks
+18,13547,2024-03-20T23:30:00.000Z,Toronto Raptors,Sacramento Kings
+19,13534,2024-03-19T00:00:00.000Z,Chicago Bulls,Portland Trail Blazers
+20,13535,2024-03-19T01:00:00.000Z,Utah Jazz,Minnesota Timberwolves
+21,13536,2024-03-19T02:00:00.000Z,Golden State Warriors,New York Knicks
+22,13537,2024-03-19T02:00:00.000Z,Sacramento Kings,Memphis Grizzlies
+23,13538,2024-03-19T02:30:00.000Z,Los Angeles Lakers,Atlanta Hawks
+24,13539,2024-03-19T23:00:00.000Z,Orlando Magic,Charlotte Hornets
+25,13540,2024-03-19T23:00:00.000Z,Washington Wizards,Houston Rockets
+26,13541,2024-03-19T23:30:00.000Z,Brooklyn Nets,New Orleans Pelicans
+27,13530,2024-03-18T01:30:00.000Z,LA Clippers,Atlanta Hawks
+28,13531,2024-03-18T23:00:00.000Z,Indiana Pacers,Cleveland Cavaliers
+29,13532,2024-03-18T23:30:00.000Z,Boston Celtics,Detroit Pistons
+30,13533,2024-03-18T23:30:00.000Z,Philadelphia 76ers,Miami Heat
