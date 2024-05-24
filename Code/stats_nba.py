@@ -130,7 +130,7 @@ for EVENT_ID in EVENT_IDS:
             "plusMinus": i['plusMinus']
         }
         data_stats.append(row)
-    print('Pulling Stats for Game ID:', i['game']['id'])
+    #print('Pulling Stats for Game ID:', i['game']['id'])
 
 #######################################################################
 #Data Cleaning and column creation
