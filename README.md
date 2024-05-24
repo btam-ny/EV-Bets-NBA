@@ -1,4 +1,5 @@
 NBA Prop Odds Expected Value
+Update
 
 Pulls in prop odds from bookmakers and historical stats to calculate if a current prop has positive or negative EV (expected value)
 Uses linear regression to predict the outcome of a players stats based on opposing teams defensive efficiency. Uses this predicted stat outcome to determine if a bookmakers lines have a positive or negative EV.
