@@ -1,0 +1,35 @@
+,id,date,home_team,away_team
+0,13661,2024-04-05T00:00:00.000Z,Houston Rockets,Golden State Warriors
+1,13662,2024-04-05T02:00:00.000Z,LA Clippers,Denver Nuggets
+2,13663,2024-04-05T23:00:00.000Z,Charlotte Hornets,Orlando Magic
+3,13664,2024-04-05T23:00:00.000Z,Indiana Pacers,Oklahoma City Thunder
+4,13665,2024-04-05T23:00:00.000Z,Washington Wizards,Portland Trail Blazers
+5,13666,2024-04-05T23:30:00.000Z,Boston Celtics,Sacramento Kings
+6,13656,2024-04-04T00:00:00.000Z,Minnesota Timberwolves,Toronto Raptors
+7,13657,2024-04-04T00:00:00.000Z,New Orleans Pelicans,Orlando Magic
+8,13658,2024-04-04T02:00:00.000Z,Phoenix Suns,Cleveland Cavaliers
+9,13659,2024-04-04T23:30:00.000Z,Miami Heat,Philadelphia 76ers
+10,13660,2024-04-04T23:30:00.000Z,New York Knicks,Sacramento Kings
+11,13646,2024-04-03T00:00:00.000Z,Minnesota Timberwolves,Houston Rockets
+12,13647,2024-04-03T01:00:00.000Z,Denver Nuggets,San Antonio Spurs
+13,13648,2024-04-03T01:00:00.000Z,Utah Jazz,Cleveland Cavaliers
+14,13649,2024-04-03T02:00:00.000Z,Sacramento Kings,LA Clippers
+15,13650,2024-04-03T23:00:00.000Z,Charlotte Hornets,Portland Trail Blazers
+16,13651,2024-04-03T23:00:00.000Z,Washington Wizards,Los Angeles Lakers
+17,13652,2024-04-03T23:30:00.000Z,Atlanta Hawks,Detroit Pistons
+18,13653,2024-04-03T23:30:00.000Z,Boston Celtics,Oklahoma City Thunder
+19,13654,2024-04-03T23:30:00.000Z,Brooklyn Nets,Indiana Pacers
+20,13655,2024-04-03T23:30:00.000Z,Milwaukee Bucks,Memphis Grizzlies
+21,13933,2024-04-03T02:00:00.000Z,Golden State Warriors,Dallas Mavericks
+22,13639,2024-04-02T00:00:00.000Z,Chicago Bulls,Atlanta Hawks
+23,13640,2024-04-02T00:00:00.000Z,New Orleans Pelicans,Phoenix Suns
+24,13641,2024-04-02T23:00:00.000Z,Philadelphia 76ers,Oklahoma City Thunder
+25,13642,2024-04-02T23:00:00.000Z,Toronto Raptors,Los Angeles Lakers
+26,13643,2024-04-02T23:00:00.000Z,Washington Wizards,Milwaukee Bucks
+27,13644,2024-04-02T23:30:00.000Z,Miami Heat,New York Knicks
+28,13645,2024-04-02T23:30:00.000Z,Dallas Mavericks,Golden State Warriors
+29,13634,2024-04-01T01:00:00.000Z,Sacramento Kings,Utah Jazz
+30,13635,2024-04-01T23:00:00.000Z,Charlotte Hornets,Boston Celtics
+31,13636,2024-04-01T23:00:00.000Z,Detroit Pistons,Memphis Grizzlies
+32,13637,2024-04-01T23:00:00.000Z,Indiana Pacers,Brooklyn Nets
+33,13638,2024-04-01T23:00:00.000Z,Orlando Magic,Portland Trail Blazers

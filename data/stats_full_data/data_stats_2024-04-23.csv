@@ -1,0 +1,255 @@
+,player_id,firstname,lastname,team,game_id,points,position,minutes,fgm,fga,fgp,ftm,fta,ftp,tpm,tpa,tpp,offReb,defReb,totReb,assists,pFouls,steals,turnovers,blocks,plusMinus,First Last Name,Points_Rebounds_Assist,Points_Rebounds,Points_Assist,Rebounds_Assist,id,date,home_team,away_team
+0,195,Aaron,Gordon,Denver Nuggets,13948,14,PF,40,5,10,50.0,4,4,100.0,0,2,0,3,4,7,3,3,0,1,0,-4,Aaron Gordon,24,21,17,10,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+1,1014,Michael,Porter Jr.,Denver Nuggets,13948,22,SF,38,8,13,61.5,0,0,0,6,10,60.0,0,9,9,1,0,2,0,0,-4,Michael Porter Jr.,32,31,23,10,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+2,279,Nikola,Jokic,Denver Nuggets,13948,27,C,41,9,16,56.3,7,7,100.0,2,4,50.0,4,16,20,10,2,2,3,0,+1,Nikola Jokic,57,47,37,30,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+3,383,Jamal,Murray,Denver Nuggets,13948,20,PG,40,9,24,37.5,2,2,100.0,0,5,0,0,3,3,5,4,0,2,2,-2,Jamal Murray,28,23,25,8,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+4,89,Kentavious,Caldwell-Pope,Denver Nuggets,13948,6,SG,35,2,7,28.6,2,2,100.0,0,4,0,0,1,1,3,4,0,2,1,-4,Kentavious Caldwell-Pope,10,7,9,4,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+5,3498,Peyton,Watson,Denver Nuggets,13948,2,F,12,1,4,25.0,0,0,0,0,2,0,0,1,1,2,0,0,0,0,+11,Peyton Watson,5,3,4,3,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+6,243,Justin,Holiday,Denver Nuggets,13948,0,SF,13,0,1,0,0,0,0,0,1,0,0,2,2,1,1,2,0,0,+2,Justin Holiday,3,2,1,3,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+7,264,Reggie,Jackson,Denver Nuggets,13948,0,PG,9,0,5,0,0,0,0,0,3,0,0,0,0,1,1,0,1,0,+4,Reggie Jackson,1,0,1,1,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+8,3420,Christian,Braun,Denver Nuggets,13948,10,G,13,5,8,62.5,0,2,0,0,3,0,2,0,2,0,2,0,0,1,+6,Christian Braun,12,12,10,2,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+9,126,Anthony,Davis,Los Angeles Lakers,13948,32,PF,39,14,19,73.7,4,4,100.0,0,1,0,1,10,11,2,5,1,4,1,0,Anthony Davis,45,43,34,13,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+10,1862,Rui,Hachimura,Los Angeles Lakers,13948,3,PF,38,1,7,14.3,1,2,50.0,0,2,0,0,5,5,0,2,0,0,0,-7,Rui Hachimura,8,8,3,5,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+11,265,LeBron,James,Los Angeles Lakers,13948,26,SF,38,9,19,47.4,5,7,71.4,3,6,50.0,0,8,8,12,3,2,2,2,+2,LeBron James,46,34,38,20,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+12,462,D'Angelo,Russell,Los Angeles Lakers,13948,23,PG,39,8,16,50.0,0,0,0,7,11,63.6,0,3,3,6,1,0,4,0,+4,D'Angelo Russell,32,26,29,9,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+13,2845,Austin,Reaves,Los Angeles Lakers,13948,9,SG,33,4,11,36.4,0,0,0,1,5,20.0,2,4,6,2,2,0,2,0,+5,Austin Reaves,17,15,11,8,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+14,437,Taurean,Prince,Los Angeles Lakers,13948,6,PF,22,2,3,66.7,0,0,0,2,3,66.7,0,3,3,0,2,0,0,0,+2,Taurean Prince,9,9,6,3,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+15,4041,Harry III,Giles,Los Angeles Lakers,13948,0,F,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Harry III Giles,0,0,0,0,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+16,1864,Jaxson,Hayes,Los Angeles Lakers,13948,0,C,6,0,0,0,0,0,0,0,0,0,1,0,1,0,2,0,0,0,-1,Jaxson Hayes,1,1,0,1,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+17,142,Spencer,Dinwiddie,Los Angeles Lakers,13948,0,PG,10,0,1,0,0,0,0,0,0,0,0,0,0,1,2,2,1,0,-9,Spencer Dinwiddie,1,0,1,1,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+18,1775,Gabe,Vincent,Los Angeles Lakers,13948,0,PG,15,0,2,0,0,0,0,0,2,0,0,1,1,1,1,1,1,0,-6,Gabe Vincent,2,1,1,2,13948,2024-04-23 02:00:00,Denver Nuggets,Los Angeles Lakers
+19,2835,Evan,Mobley,Cleveland Cavaliers,13946,17,PF,32,5,13,38.5,6,9,66.7,1,4,25.0,2,5,7,1,3,1,3,1,+11,Evan Mobley,25,24,18,8,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+20,727,Jarrett,Allen,Cleveland Cavaliers,13946,16,C,39,6,10,60.0,4,8,50.0,0,0,0,9,11,20,3,4,2,2,3,+12,Jarrett Allen,39,36,19,23,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+21,1860,Darius,Garland,Cleveland Cavaliers,13946,15,PG,32,5,11,45.5,1,2,50.0,4,7,57.1,0,3,3,4,5,1,4,0,-4,Darius Garland,22,18,19,7,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+22,840,Donovan,Mitchell,Cleveland Cavaliers,13946,23,SG,36,9,22,40.9,3,5,60.0,2,10,20.0,1,7,8,4,5,1,3,1,+10,Donovan Mitchell,35,31,27,12,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+23,2051,Max,Strus,Cleveland Cavaliers,13946,7,SG,37,2,7,28.6,2,2,100.0,1,5,20.0,3,6,9,4,3,1,0,0,+5,Max Strus,20,16,11,13,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+24,391,Georges,Niang,Cleveland Cavaliers,13946,0,SF,14,0,4,0,0,0,0,0,4,0,0,0,0,0,3,0,0,1,+2,Georges Niang,0,0,0,0,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+25,2630,Isaac,Okoro,Cleveland Cavaliers,13946,10,SF,25,4,8,50.0,0,0,0,2,5,40.0,0,0,0,1,0,4,2,0,+12,Isaac Okoro,11,10,11,1,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+26,317,Caris,LeVert,Cleveland Cavaliers,13946,8,SG,25,3,7,42.9,0,0,0,2,4,50.0,0,1,1,1,1,1,1,0,+2,Caris LeVert,10,9,9,2,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+27,801,Jonathan,Isaac,Orlando Magic,13946,3,PF,20,1,7,14.3,0,0,0,1,7,14.3,1,3,4,0,0,0,1,2,-10,Jonathan Isaac,7,7,3,4,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+28,3414,Paolo,Banchero,Orlando Magic,13946,21,PF,41,9,20,45.0,2,2,100.0,1,4,25.0,1,2,3,3,1,2,6,1,-4,Paolo Banchero,27,24,24,6,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+29,2858,Franz,Wagner,Orlando Magic,13946,18,SF,38,5,17,29.4,6,7,85.7,2,4,50.0,2,5,7,2,4,1,6,1,-5,Franz Wagner,27,25,20,9,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+30,220,Gary,Harris,Orlando Magic,13946,14,SG,34,5,10,50.0,0,0,0,4,7,57.1,2,2,4,2,2,1,0,1,+2,Gary Harris,20,18,16,6,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+31,2852,Jalen,Suggs,Orlando Magic,13946,9,SG,29,2,5,40.0,5,7,71.4,0,3,0,2,4,6,5,2,1,1,0,+8,Jalen Suggs,20,15,14,11,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+32,1037,Moritz,Wagner,Orlando Magic,13946,12,C,21,5,8,62.5,2,4,50.0,0,2,0,1,5,6,0,6,2,1,0,+1,Moritz Wagner,18,18,12,6,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+33,950,Wendell,Carter Jr.,Orlando Magic,13946,6,C,18,1,7,14.3,3,4,75.0,1,6,16.7,2,3,5,3,5,0,0,0,-2,Wendell Carter Jr.,14,11,9,8,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+34,779,Markelle,Fultz,Orlando Magic,13946,1,PG,6,0,0,0,1,2,50.0,0,0,0,0,0,0,0,0,0,0,0,-6,Markelle Fultz,1,1,1,0,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+35,2563,Cole,Anthony,Orlando Magic,13946,0,PG,17,0,4,0,0,0,0,0,1,0,0,5,5,0,2,0,1,0,-13,Cole Anthony,5,5,0,5,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+36,258,Joe,Ingles,Orlando Magic,13946,2,SG,14,1,2,50.0,0,0,0,0,1,0,0,1,1,3,0,1,0,0,-14,Joe Ingles,6,3,5,4,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+37,3449,Caleb,Houstan,Orlando Magic,13946,0,G,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-7,Caleb Houstan,0,0,0,0,13946,2024-04-22 23:00:00,Cleveland Cavaliers,Orlando Magic
+38,732,O.G.,Anunoby,New York Knicks,13947,10,SF,37,4,10,40.0,2,2,100.0,0,3,0,0,4,4,1,0,0,0,1,+1,O.G. Anunoby,15,14,11,5,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+39,978,Isaiah,Hartenstein,New York Knicks,13947,14,C,30,7,8,87.5,0,0,0,0,0,0,4,4,8,4,4,0,2,3,+1,Isaiah Hartenstein,26,22,18,12,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+40,946,Jalen,Brunson,New York Knicks,13947,24,PG,38,8,29,27.6,7,9,77.8,1,6,16.7,0,8,8,6,3,0,1,0,+3,Jalen Brunson,38,32,30,14,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+41,791,Josh,Hart,New York Knicks,13947,21,SG,48,7,16,43.8,3,4,75.0,4,7,57.1,4,11,15,3,2,2,2,2,+3,Josh Hart,39,36,24,18,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+42,962,Donte,DiVincenzo,New York Knicks,13947,19,SG,37,5,10,50.0,5,5,100.0,4,8,50.0,1,3,4,3,4,2,1,0,+11,Donte DiVincenzo,26,23,22,7,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+43,60,Bojan,Bogdanovic,New York Knicks,13947,6,SF,12,2,7,28.6,0,0,0,2,6,33.3,0,2,2,2,1,0,0,0,+2,Bojan Bogdanovic,10,8,8,4,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+44,1020,Mitchell,Robinson,New York Knicks,13947,1,C,18,0,0,0,1,2,50.0,0,0,0,3,1,4,1,1,0,1,0,+2,Mitchell Robinson,6,5,2,5,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+45,2832,Miles,McBride,New York Knicks,13947,9,PG,21,4,11,36.4,1,1,100.0,0,3,0,0,1,1,2,2,1,0,0,-8,Miles McBride,12,10,11,3,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+46,222,Tobias,Harris,Philadelphia 76ers,13947,10,PF,41,4,11,36.4,0,0,0,2,5,40.0,2,7,9,3,3,1,1,1,-5,Tobias Harris,22,19,13,12,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+47,159,Joel,Embiid,Philadelphia 76ers,13947,34,C,39,12,29,41.4,8,12,66.7,2,9,22.2,5,5,10,6,2,0,2,1,+3,Joel Embiid,50,44,40,16,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+48,327,Kyle,Lowry,Philadelphia 76ers,13947,8,PG,34,2,6,33.3,2,4,50.0,2,5,40.0,1,5,6,3,5,2,1,1,+6,Kyle Lowry,17,14,11,9,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+49,2619,Tyrese,Maxey,Philadelphia 76ers,13947,35,PG,44,12,22,54.5,6,6,100.0,5,11,45.5,0,9,9,10,1,0,4,0,-3,Tyrese Maxey,54,44,45,19,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+50,407,Kelly,Oubre Jr.,Philadelphia 76ers,13947,4,SG,26,2,7,28.6,0,0,0,0,0,0,0,2,2,3,4,0,1,3,-1,Kelly Oubre Jr.,9,6,7,5,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+51,40,Nicolas,Batum,Philadelphia 76ers,13947,6,PF,33,2,5,40.0,0,0,0,2,4,50.0,1,4,5,1,3,0,0,0,-6,Nicolas Batum,12,11,7,6,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+52,2638,Paul,Reed,Philadelphia 76ers,13947,2,SF,9,1,1,100.0,0,0,0,0,0,0,1,1,2,0,1,0,0,0,-6,Paul Reed,4,4,2,2,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+53,236,Buddy,Hield,Philadelphia 76ers,13947,2,SG,15,1,3,33.3,0,0,0,0,2,0,0,1,1,0,2,0,1,0,-3,Buddy Hield,3,3,2,1,13947,2024-04-22 23:30:00,New York Knicks,Philadelphia 76ers
+54,3448,Chet,Holmgren,Oklahoma City Thunder,13983,15,PF,32,6,14,42.9,1,2,50.0,2,6,33.3,2,9,11,2,0,1,3,5,+1,Chet Holmgren,28,26,17,13,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+55,3504,Jalen,Williams,Oklahoma City Thunder,13983,19,F,40,8,18,44.4,2,3,66.7,1,5,20.0,3,4,7,4,3,2,4,0,+8,Jalen Williams,30,26,23,11,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+56,972,Shai,Gilgeous-Alexander,Oklahoma City Thunder,13983,28,PG,39,11,24,45.8,6,7,85.7,0,3,0,0,6,6,4,3,0,3,0,-1,Shai Gilgeous-Alexander,38,34,32,10,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+57,2808,Josh,Giddey,Oklahoma City Thunder,13983,2,SG,20,1,6,16.7,0,0,0,0,2,0,0,3,3,3,0,0,2,1,+7,Josh Giddey,8,5,5,6,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+58,2040,Luguentz,Dort,Oklahoma City Thunder,13983,6,G,35,2,6,33.3,0,0,0,2,4,50.0,2,2,4,1,3,0,0,0,0,Luguentz Dort,11,10,7,5,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+59,3505,Jaylin,Williams,Oklahoma City Thunder,13983,6,F,7,2,4,50.0,0,0,0,2,4,50.0,0,2,2,2,0,1,0,0,+1,Jaylin Williams,10,8,8,4,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+60,227,Gordon,Hayward,Oklahoma City Thunder,13983,0,SF,9,0,0,0,0,0,0,0,0,0,0,2,2,1,0,1,0,1,0,Gordon Hayward,3,2,1,3,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+61,1044,Kenrich,Williams,Oklahoma City Thunder,13983,2,SF,9,1,3,33.3,0,0,0,0,2,0,0,3,3,0,2,0,0,0,-5,Kenrich Williams,5,5,2,3,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+62,2604,Isaiah,Joe,Oklahoma City Thunder,13983,5,SG,15,2,5,40.0,0,0,0,1,3,33.3,0,2,2,1,1,0,1,0,+7,Isaiah Joe,8,7,6,3,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+63,2863,Aaron,Wiggins,Oklahoma City Thunder,13983,6,SG,16,2,2,100.0,1,1,100.0,1,1,100.0,0,3,3,2,0,0,0,0,-4,Aaron Wiggins,11,9,8,5,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+64,4009,Cason,Wallace,Oklahoma City Thunder,13983,5,G,19,2,3,66.7,0,0,0,1,2,50.0,1,0,1,1,1,0,0,0,-4,Cason Wallace,7,6,6,2,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+65,260,Brandon,Ingram,New Orleans Pelicans,13983,12,SF,37,5,17,29.4,2,2,100.0,0,2,0,1,5,6,3,2,0,2,1,+1,Brandon Ingram,21,18,15,9,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+66,2822,Herbert,Jones,New Orleans Pelicans,13983,8,SF,33,2,10,20.0,2,2,100.0,2,8,25.0,2,5,7,4,2,1,3,0,-3,Herbert Jones,19,15,12,11,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+67,525,Jonas,Valanciunas,New Orleans Pelicans,13983,13,C,29,5,9,55.6,3,4,75.0,0,0,0,9,11,20,2,2,1,3,0,-2,Jonas Valanciunas,35,33,15,22,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+68,347,CJ,McCollum,New Orleans Pelicans,13983,20,SG,39,9,22,40.9,0,0,0,2,9,22.2,0,3,3,6,5,2,3,1,+1,CJ McCollum,29,23,26,9,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+69,2837,Trey,Murphy III,New Orleans Pelicans,13983,21,SG,44,8,18,44.4,0,0,0,5,12,41.7,1,3,4,2,3,1,0,3,0,Trey Murphy III,27,25,23,6,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+70,385,Larry,Nance Jr.,New Orleans Pelicans,13983,8,PF,19,4,6,66.7,0,1,0,0,0,0,4,4,8,0,1,0,2,0,0,Larry Nance Jr.,16,16,8,8,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+71,2668,Naji,Marshall,New Orleans Pelicans,13983,5,SF,16,2,7,28.6,0,0,0,1,4,25.0,1,3,4,4,1,1,0,1,+1,Naji Marshall,13,9,9,8,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+72,2941,Jose,Alvarado,New Orleans Pelicans,13983,5,PG,19,2,7,28.6,0,0,0,1,4,25.0,0,0,0,1,0,1,1,0,-6,Jose Alvarado,6,5,6,1,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+73,3406,Dyson,Daniels,New Orleans Pelicans,13983,0,G,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-2,Dyson Daniels,0,0,0,0,13983,2024-04-22 01:30:00,Oklahoma City Thunder,New Orleans Pelicans
+74,431,Bobby,Portis,Milwaukee Bucks,13940,15,F,31,7,15,46.7,1,1,100.0,0,2,0,0,11,11,1,6,0,3,0,+23,Bobby Portis,27,26,16,12,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+75,361,Khris,Middleton,Milwaukee Bucks,13940,23,SF,35,9,14,64.3,4,4,100.0,1,4,25.0,1,9,10,4,5,0,1,1,+25,Khris Middleton,37,33,27,14,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+76,323,Brook,Lopez,Milwaukee Bucks,13940,11,C,32,5,10,50.0,0,0,0,1,4,25.0,1,3,4,3,3,0,1,3,-5,Brook Lopez,18,15,14,7,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+77,53,Patrick,Beverley,Milwaukee Bucks,13940,5,PG,37,2,5,40.0,0,0,0,1,2,50.0,1,6,7,8,3,2,1,0,+17,Patrick Beverley,20,12,13,15,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+78,319,Damian,Lillard,Milwaukee Bucks,13940,35,PG,38,11,24,45.8,7,7,100.0,6,11,54.5,0,6,6,3,2,0,3,0,-6,Damian Lillard,44,41,38,9,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+79,121,Jae,Crowder,Milwaukee Bucks,13940,5,PF,12,2,4,50.0,0,0,0,1,2,50.0,2,1,3,1,1,0,0,1,+2,Jae Crowder,9,8,6,4,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+80,115,Pat,Connaughton,Milwaukee Bucks,13940,6,SG,22,2,5,40.0,1,1,100.0,1,2,50.0,0,2,2,1,0,3,1,0,+9,Pat Connaughton,9,8,7,3,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+81,46,Malik,Beasley,Milwaukee Bucks,13940,9,SG,29,3,7,42.9,0,0,0,3,7,42.9,0,4,4,0,1,0,0,0,+11,Malik Beasley,13,13,9,4,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+82,3443,A.J.,Green,Milwaukee Bucks,13940,0,G,6,0,3,0,0,0,0,0,3,0,0,0,0,0,1,0,0,0,-1,A.J. Green,0,0,0,0,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+83,479,Pascal,Siakam,Indiana Pacers,13940,36,PF,40,15,25,60.0,5,10,50.0,1,4,25.0,5,8,13,2,3,1,1,2,-9,Pascal Siakam,51,49,38,15,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+84,2626,Aaron,Nesmith,Indiana Pacers,13940,7,SF,37,2,9,22.2,2,2,100.0,1,7,14.3,0,4,4,3,2,0,1,1,0,Aaron Nesmith,14,11,10,7,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+85,522,Myles,Turner,Indiana Pacers,13940,17,C,33,5,17,29.4,4,6,66.7,3,9,33.3,1,7,8,2,1,2,1,0,+2,Myles Turner,27,25,19,10,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+86,3476,Andrew,Nembhard,Indiana Pacers,13940,6,PG,30,2,6,33.3,1,1,100.0,1,2,50.0,0,0,0,3,3,0,0,0,-2,Andrew Nembhard,9,6,9,3,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+87,2595,Tyrese,Haliburton,Indiana Pacers,13940,9,PG,38,4,7,57.1,0,0,0,1,3,33.3,1,6,7,8,0,1,3,1,-3,Tyrese Haliburton,24,16,17,15,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+88,2658,Obi,Toppin,Indiana Pacers,13940,4,PF,13,2,6,33.3,0,0,0,0,4,0,0,5,5,0,1,0,0,1,-9,Obi Toppin,9,9,4,5,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+89,2644,Jalen,Smith,Indiana Pacers,13940,2,PF,13,0,2,0,2,2,100.0,0,1,0,5,2,7,0,3,0,2,0,-13,Jalen Smith,9,9,2,7,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+90,351,Doug,McDermott,Indiana Pacers,13940,0,SF,7,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,-17,Doug McDermott,0,0,0,0,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+91,2817,Isaiah,Jackson,Indiana Pacers,13940,0,SF,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,-4,Isaiah Jackson,0,0,0,0,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+92,348,T.J.,McConnell,Indiana Pacers,13940,10,PG,18,5,13,38.5,0,0,0,0,3,0,1,1,2,1,0,0,2,0,-13,T.J. McConnell,13,12,11,3,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+93,3979,Ben,Sheppard,Indiana Pacers,13940,3,G,9,1,5,20.0,0,0,0,1,4,25.0,1,3,4,1,2,0,2,0,-7,Ben Sheppard,8,7,4,5,13940,2024-04-21 23:00:00,Milwaukee Bucks,Indiana Pacers
+94,189,Paul,George,LA Clippers,13941,22,F,38,8,20,40.0,2,2,100.0,4,12,33.3,0,6,6,3,4,1,2,0,+7,Paul George,31,28,25,9,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+95,575,Ivica,Zubac,LA Clippers,13941,20,C,33,10,17,58.8,0,1,0,0,0,0,4,11,15,1,2,1,1,1,+15,Ivica Zubac,36,35,21,16,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+96,216,James,Harden,LA Clippers,13941,28,SG,39,8,17,47.1,6,6,100.0,6,11,54.5,0,2,2,8,1,0,1,2,+7,James Harden,38,30,36,10,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+97,1877,Terance,Mann,LA Clippers,13941,13,SG,39,4,8,50.0,2,2,100.0,3,3,100.0,4,5,9,2,3,0,1,0,+12,Terance Mann,24,22,15,11,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+98,2115,Amir,Coffey,LA Clippers,13941,6,SG,25,2,7,28.6,0,0,0,2,4,50.0,0,3,3,1,3,0,1,0,+1,Amir Coffey,10,9,7,4,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+99,426,Mason,Plumlee,LA Clippers,13941,2,C,13,1,4,25.0,0,0,0,0,0,0,1,4,5,1,2,1,0,0,+4,Mason Plumlee,8,7,3,6,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+100,544,Russell,Westbrook,LA Clippers,13941,13,PG,23,5,8,62.5,1,2,50.0,2,4,50.0,1,3,4,4,3,2,4,0,+9,Russell Westbrook,21,17,17,8,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+101,434,Norman,Powell,LA Clippers,13941,5,G,30,2,6,33.3,0,0,0,1,2,50.0,0,1,1,1,4,0,2,0,+5,Norman Powell,7,6,6,2,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+102,1897,P.J.,Washington,Dallas Mavericks,13941,11,PF,37,4,10,40.0,1,2,50.0,2,7,28.6,1,6,7,0,4,2,0,1,-1,P.J. Washington,18,18,11,7,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+103,283,Derrick,Jones Jr.,Dallas Mavericks,13941,0,SF,18,0,4,0,0,0,0,0,1,0,1,0,1,0,2,0,0,2,-14,Derrick Jones Jr.,1,1,0,1,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+104,1859,Daniel,Gafford,Dallas Mavericks,13941,3,C,14,1,4,25.0,1,2,50.0,0,0,0,0,0,0,0,2,0,1,1,-8,Daniel Gafford,3,3,3,0,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+105,261,Kyrie,Irving,Dallas Mavericks,13941,31,PG,39,10,18,55.6,8,9,88.9,3,6,50.0,3,4,7,4,3,2,1,0,-9,Kyrie Irving,42,38,35,11,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+106,963,Luka,Doncic,Dallas Mavericks,13941,33,PG,42,11,26,42.3,7,8,87.5,4,12,33.3,1,12,13,6,1,1,4,0,+3,Luka Doncic,52,46,39,19,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+107,817,Maxi,Kleber,Dallas Mavericks,13941,3,PF,27,1,5,20.0,1,2,50.0,0,3,0,2,1,3,3,2,0,1,1,+6,Maxi Kleber,9,6,6,6,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+108,3960,OlivierMaxence,Prosper,Dallas Mavericks,13941,0,F,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-2,OlivierMaxence Prosper,0,0,0,0,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+109,215,Tim,Hardaway Jr.,Dallas Mavericks,13941,6,SF,16,2,5,40.0,1,2,50.0,1,2,50.0,0,3,3,0,1,0,0,0,-10,Tim Hardaway Jr.,9,9,6,3,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+110,433,Dwight,Powell,Dallas Mavericks,13941,0,C,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-2,Dwight Powell,0,0,0,0,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+111,4044,Dereck II,Lively,Dallas Mavericks,13941,3,C,19,1,3,33.3,1,2,50.0,0,0,0,1,3,4,0,0,0,0,3,-19,Dereck II Lively,7,7,3,4,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+112,2593,Josh,Green,Dallas Mavericks,13941,4,SG,9,0,0,0,4,4,100.0,0,0,0,0,1,1,1,0,2,0,1,+11,Josh Green,6,5,5,2,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+113,164,Dante,Exum,Dallas Mavericks,13941,3,G,16,1,4,25.0,1,2,50.0,0,1,0,0,2,2,0,0,0,1,0,-11,Dante Exum,5,5,3,2,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+114,2890,A.J.,Lawson,Dallas Mavericks,13941,0,G,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-2,A.J. Lawson,0,0,0,0,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+115,3407,Jaden,Hardy,Dallas Mavericks,13941,0,G,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,-2,Jaden Hardy,0,0,0,0,13941,2024-04-21 19:30:00,LA Clippers,Dallas Mavericks
+116,195,Aaron,Gordon,Denver Nuggets,13945,12,PF,32,5,11,45.5,2,2,100.0,0,3,0,6,5,11,7,2,0,1,0,+20,Aaron Gordon,30,23,19,18,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+117,1014,Michael,Porter Jr.,Denver Nuggets,13945,19,SF,38,8,15,53.3,0,0,0,3,7,42.9,1,7,8,0,1,1,0,2,+10,Michael Porter Jr.,27,27,19,8,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+118,279,Nikola,Jokic,Denver Nuggets,13945,32,C,39,15,23,65.2,1,2,50.0,1,3,33.3,3,9,12,7,3,2,0,0,+14,Nikola Jokic,51,44,39,19,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+119,383,Jamal,Murray,Denver Nuggets,13945,22,PG,39,9,24,37.5,0,0,0,4,9,44.4,1,5,6,10,1,0,0,1,+9,Jamal Murray,38,28,32,16,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+120,89,Kentavious,Caldwell-Pope,Denver Nuggets,13945,12,SG,37,4,11,36.4,0,0,0,4,10,40.0,0,2,2,1,3,3,0,0,+14,Kentavious Caldwell-Pope,15,14,13,3,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+121,3498,Peyton,Watson,Denver Nuggets,13945,8,F,14,3,6,50.0,0,0,0,2,4,50.0,1,0,1,0,3,0,2,0,-6,Peyton Watson,9,9,8,1,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+122,243,Justin,Holiday,Denver Nuggets,13945,0,SF,6,0,2,0,0,0,0,0,2,0,1,0,1,0,0,0,0,0,-2,Justin Holiday,1,1,0,1,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+123,286,DeAndre,Jordan,Denver Nuggets,13945,4,C,9,1,1,100.0,2,2,100.0,0,0,0,0,2,2,0,3,1,0,1,-3,DeAndre Jordan,6,6,4,2,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+124,264,Reggie,Jackson,Denver Nuggets,13945,3,PG,9,1,4,25.0,0,0,0,1,2,50.0,0,1,1,2,2,0,1,0,+2,Reggie Jackson,6,4,5,3,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+125,3420,Christian,Braun,Denver Nuggets,13945,2,G,18,1,5,20.0,0,0,0,0,2,0,2,3,5,0,2,0,0,0,-3,Christian Braun,7,7,2,5,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+126,126,Anthony,Davis,Los Angeles Lakers,13945,32,PF,45,12,23,52.2,8,9,88.9,0,4,0,3,11,14,5,3,0,2,4,-12,Anthony Davis,51,46,37,19,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+127,1862,Rui,Hachimura,Los Angeles Lakers,13945,7,PF,31,2,4,50.0,2,2,100.0,1,2,50.0,0,3,3,1,1,0,1,0,-10,Rui Hachimura,11,10,8,4,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+128,265,LeBron,James,Los Angeles Lakers,13945,27,SF,41,10,16,62.5,4,5,80.0,3,5,60.0,2,4,6,8,1,1,7,1,-9,LeBron James,41,33,35,14,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+129,462,D'Angelo,Russell,Los Angeles Lakers,13945,13,PG,41,6,20,30.0,0,0,0,1,9,11.1,0,3,3,3,3,2,1,0,+2,D'Angelo Russell,19,16,16,6,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+130,2845,Austin,Reaves,Los Angeles Lakers,13945,13,SG,37,5,9,55.6,1,1,100.0,2,6,33.3,0,4,4,3,1,0,0,1,-12,Austin Reaves,20,17,16,7,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+131,437,Taurean,Prince,Los Angeles Lakers,13945,11,PF,20,4,7,57.1,2,2,100.0,1,3,33.3,0,4,4,0,0,0,0,1,0,Taurean Prince,15,15,11,4,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+132,1864,Jaxson,Hayes,Los Angeles Lakers,13945,0,C,4,0,0,0,0,0,0,0,0,0,0,3,3,0,2,0,0,0,+2,Jaxson Hayes,3,3,0,3,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+133,142,Spencer,Dinwiddie,Los Angeles Lakers,13945,0,PG,13,0,0,0,0,0,0,0,0,0,0,2,2,1,1,0,0,0,-12,Spencer Dinwiddie,3,2,1,3,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+134,1775,Gabe,Vincent,Los Angeles Lakers,13945,0,PG,8,0,0,0,0,0,0,0,0,0,1,0,1,1,3,0,1,0,-4,Gabe Vincent,2,1,1,2,13945,2024-04-21 00:30:00,Denver Nuggets,Los Angeles Lakers
+135,882,Jayson,Tatum,Boston Celtics,13982,23,SF,41,7,18,38.9,8,8,100.0,1,8,12.5,1,9,10,10,4,2,3,0,+3,Jayson Tatum,43,33,33,20,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+136,432,Kristaps,Porzingis,Boston Celtics,13982,18,C,34,7,13,53.8,0,0,0,4,8,50.0,1,3,4,1,3,1,2,2,+17,Kristaps Porzingis,23,22,19,5,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+137,242,Jrue,Holiday,Boston Celtics,13982,6,PG,33,2,8,25.0,0,0,0,2,4,50.0,2,5,7,3,0,2,1,2,+13,Jrue Holiday,16,13,9,10,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+138,897,Derrick,White,Boston Celtics,13982,20,PG,33,6,10,60.0,4,4,100.0,4,8,50.0,0,3,3,4,1,0,3,1,+24,Derrick White,27,23,24,7,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+139,75,Jaylen,Brown,Boston Celtics,13982,17,SG,34,6,12,50.0,2,4,50.0,3,5,60.0,2,6,8,3,1,0,1,1,+17,Jaylen Brown,28,25,20,11,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+140,2812,Sam,Hauser,Boston Celtics,13982,12,SF,14,4,6,66.7,0,0,0,4,6,66.7,1,0,1,1,0,1,0,0,+5,Sam Hauser,14,13,13,2,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+141,248,Al,Horford,Boston Celtics,13982,10,C,26,4,8,50.0,0,0,0,2,5,40.0,2,5,7,0,0,0,0,0,+2,Al Horford,17,17,10,7,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+142,2635,Payton,Pritchard,Boston Celtics,13982,8,PG,24,3,7,42.9,0,0,0,2,5,40.0,1,3,4,5,1,0,0,0,+19,Payton Pritchard,17,12,13,9,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+143,3453,Nikola,Jovic,Miami Heat,13982,10,F,26,3,9,33.3,2,2,100.0,2,6,33.3,1,5,6,0,1,0,1,1,-25,Nikola Jovic,16,16,10,6,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+144,2242,Caleb,Martin,Miami Heat,13982,4,SF,29,2,6,33.3,0,0,0,0,4,0,2,2,4,2,4,0,0,0,-1,Caleb Martin,10,8,6,6,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+145,724,Bam,Adebayo,Miami Heat,13982,24,C,36,10,18,55.6,4,4,100.0,0,2,0,0,6,6,3,4,0,2,0,-6,Bam Adebayo,33,30,27,9,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+146,1866,Tyler,Herro,Miami Heat,13982,11,PG,34,4,13,30.8,0,0,0,3,9,33.3,0,4,4,4,1,1,2,0,-12,Tyler Herro,19,15,15,8,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+147,4085,Jamie Jr.,Jaquez,Miami Heat,13982,16,G,36,8,16,50.0,0,0,0,0,2,0,1,3,4,4,1,1,2,0,-7,Jamie Jr. Jaquez,24,20,20,8,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+148,326,Kevin,Love,Miami Heat,13982,7,PF,13,3,4,75.0,0,0,0,1,2,50.0,1,3,4,2,0,0,1,0,-8,Kevin Love,13,11,9,6,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+149,1018,Duncan,Robinson,Miami Heat,13982,5,F,15,2,4,50.0,0,0,0,1,3,33.3,0,2,2,2,0,0,1,0,-9,Duncan Robinson,9,7,7,4,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+150,1815,Haywood,Highsmith,Miami Heat,13982,0,F,26,0,4,0,0,0,0,0,4,0,0,3,3,3,1,0,0,0,-21,Haywood Highsmith,6,3,3,6,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+151,564,Delon,Wright,Miami Heat,13982,17,SG,26,6,7,85.7,0,0,0,5,5,100.0,0,1,1,3,1,2,0,0,-11,Delon Wright,21,18,20,4,13982,2024-04-21 17:00:00,Boston Celtics,Miami Heat
+152,2835,Evan,Mobley,Cleveland Cavaliers,13938,16,PF,36,6,12,50.0,2,2,100.0,2,4,50.0,2,9,11,2,3,0,1,3,+5,Evan Mobley,29,27,18,13,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+153,727,Jarrett,Allen,Cleveland Cavaliers,13938,16,C,35,6,10,60.0,4,6,66.7,0,0,0,3,15,18,2,1,2,0,0,+10,Jarrett Allen,36,34,18,20,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+154,1860,Darius,Garland,Cleveland Cavaliers,13938,14,PG,32,6,11,54.5,0,0,0,2,6,33.3,0,3,3,8,4,1,5,0,+8,Darius Garland,25,17,22,11,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+155,840,Donovan,Mitchell,Cleveland Cavaliers,13938,30,SG,36,11,21,52.4,5,5,100.0,3,8,37.5,2,0,2,3,1,3,4,0,+10,Donovan Mitchell,35,32,33,5,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+156,2051,Max,Strus,Cleveland Cavaliers,13938,7,SG,33,3,8,37.5,0,0,0,1,5,20.0,0,9,9,1,3,1,5,0,+13,Max Strus,17,16,8,10,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+157,391,Georges,Niang,Cleveland Cavaliers,13938,5,SF,25,1,7,14.3,3,4,75.0,0,4,0,0,3,3,2,4,1,1,0,+13,Georges Niang,10,8,7,5,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+158,2630,Isaac,Okoro,Cleveland Cavaliers,13938,4,SF,19,1,2,50.0,2,2,100.0,0,0,0,0,2,2,0,2,1,0,1,+4,Isaac Okoro,6,6,4,2,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+159,317,Caris,LeVert,Cleveland Cavaliers,13938,5,SG,20,2,8,25.0,1,2,50.0,0,1,0,2,2,4,2,2,0,1,0,+7,Caris LeVert,11,9,7,6,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+160,2623,Sam,Merrill,Cleveland Cavaliers,13938,0,SG,4,0,2,0,0,0,0,0,2,0,1,1,2,1,1,0,0,0,0,Sam Merrill,3,2,1,3,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+161,801,Jonathan,Isaac,Orlando Magic,13938,10,PF,29,3,8,37.5,2,2,100.0,2,4,50.0,2,3,5,1,2,3,0,3,-13,Jonathan Isaac,16,15,11,6,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+162,3414,Paolo,Banchero,Orlando Magic,13938,24,PF,41,9,17,52.9,4,8,50.0,2,7,28.6,1,6,7,5,3,0,9,0,-11,Paolo Banchero,36,31,29,12,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+163,2858,Franz,Wagner,Orlando Magic,13938,18,SF,38,7,15,46.7,2,4,50.0,2,6,33.3,1,6,7,3,3,1,0,3,-7,Franz Wagner,28,25,21,10,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+164,220,Gary,Harris,Orlando Magic,13938,0,SG,33,0,6,0,0,0,0,0,5,0,1,1,2,0,2,3,0,0,-12,Gary Harris,2,2,0,2,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+165,2852,Jalen,Suggs,Orlando Magic,13938,13,SG,33,4,16,25.0,4,6,66.7,1,7,14.3,3,1,4,4,5,2,1,1,-13,Jalen Suggs,21,17,17,8,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+166,1037,Moritz,Wagner,Orlando Magic,13938,10,C,13,4,8,50.0,2,4,50.0,0,1,0,2,3,5,0,3,1,0,0,+1,Moritz Wagner,15,15,10,5,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+167,950,Wendell,Carter Jr.,Orlando Magic,13938,3,C,15,1,3,33.3,0,0,0,1,2,50.0,0,2,2,0,2,0,2,0,-8,Wendell Carter Jr.,5,5,3,2,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+168,779,Markelle,Fultz,Orlando Magic,13938,0,PG,13,0,4,0,0,0,0,0,0,0,0,3,3,1,2,0,0,0,-4,Markelle Fultz,4,3,1,4,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+169,2563,Cole,Anthony,Orlando Magic,13938,4,PG,11,0,7,0,4,4,100.0,0,4,0,0,1,1,0,1,1,0,0,-5,Cole Anthony,5,5,4,1,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+170,258,Joe,Ingles,Orlando Magic,13938,1,SG,15,0,2,0,1,2,50.0,0,1,0,1,3,4,2,2,1,0,0,+2,Joe Ingles,7,5,3,6,13938,2024-04-20 17:00:00,Cleveland Cavaliers,Orlando Magic
+171,2621,Jaden,McDaniels,Minnesota Timberwolves,13939,9,PF,38,3,7,42.9,3,3,100.0,0,2,0,2,4,6,0,2,0,2,2,+18,Jaden McDaniels,15,15,9,6,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+172,192,Rudy,Gobert,Minnesota Timberwolves,13939,14,C,37,4,6,66.7,6,7,85.7,0,0,0,6,10,16,2,4,0,1,0,+19,Rudy Gobert,32,30,16,18,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+173,519,Karl-Anthony,Towns,Minnesota Timberwolves,13939,19,C,27,5,9,55.6,8,8,100.0,1,2,50.0,1,6,7,4,4,1,2,0,-2,Karl-Anthony Towns,30,26,23,11,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+174,114,Mike,Conley,Minnesota Timberwolves,13939,4,PG,27,2,12,16.7,0,0,0,0,3,0,2,1,3,7,5,0,1,0,-8,Mike Conley,14,7,11,10,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+175,2584,Anthony,Edwards,Minnesota Timberwolves,13939,33,SG,36,14,24,58.3,1,2,50.0,4,8,50.0,1,8,9,6,4,2,6,0,+19,Anthony Edwards,48,42,39,15,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+176,540,T.J.,Warren,Minnesota Timberwolves,13939,0,SF,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,+5,T.J. Warren,0,0,0,0,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+177,18,Kyle,Anderson,Minnesota Timberwolves,13939,2,SF,5,1,2,50.0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,+2,Kyle Anderson,2,2,2,0,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+178,2807,Luka,Garza,Minnesota Timberwolves,13939,5,C,3,2,2,100.0,0,0,0,1,1,100.0,0,1,1,0,0,0,0,0,+5,Luka Garza,6,6,5,1,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+179,2146,Naz,Reid,Minnesota Timberwolves,13939,12,C,19,4,10,40.0,2,2,100.0,2,6,33.3,0,2,2,2,1,1,0,0,+22,Naz Reid,16,14,14,4,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+180,845,Monte,Morris,Minnesota Timberwolves,13939,2,PG,10,1,3,33.3,0,0,0,0,1,0,0,3,3,3,0,0,0,0,+9,Monte Morris,8,5,5,6,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+181,997,Jordan,McLaughlin,Minnesota Timberwolves,13939,2,PG,3,1,1,100.0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,+5,Jordan McLaughlin,3,3,2,1,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+182,1845,Nickeil,Alexander-Walker,Minnesota Timberwolves,13939,18,SG,29,7,12,58.3,0,0,0,4,9,44.4,1,3,4,2,2,4,1,0,+28,Nickeil Alexander-Walker,24,22,20,6,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+183,3474,Wendell,Moore Jr.,Minnesota Timberwolves,13939,0,G,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,+3,Wendell Moore Jr.,0,0,0,0,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+184,153,Kevin,Durant,Phoenix Suns,13939,31,PF,39,11,17,64.7,7,9,77.8,2,2,100.0,0,7,7,1,1,1,5,1,-20,Kevin Durant,39,38,32,8,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+185,398,Jusuf,Nurkic,Phoenix Suns,13939,9,C,27,4,6,66.7,1,3,33.3,0,1,0,0,4,4,1,4,2,2,3,-1,Jusuf Nurkic,14,13,10,5,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+186,45,Bradley,Beal,Phoenix Suns,13939,15,SG,37,6,10,60.0,2,3,66.7,1,3,33.3,1,1,2,6,2,3,1,0,-9,Bradley Beal,23,17,21,8,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+187,926,Grayson,Allen,Phoenix Suns,13939,4,SG,25,0,3,0,4,4,100.0,0,3,0,1,4,5,2,2,0,2,0,-6,Grayson Allen,11,9,6,7,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+188,64,Devin,Booker,Phoenix Suns,13939,18,SG,38,5,16,31.3,6,6,100.0,2,6,33.3,0,2,2,5,4,1,1,0,-15,Devin Booker,25,20,23,7,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+189,851,Royce,O'Neale,Phoenix Suns,13939,14,PF,26,5,10,50.0,0,0,0,4,8,50.0,1,3,4,0,3,0,0,0,-17,Royce O'Neale,18,18,14,4,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+190,966,Drew,Eubanks,Phoenix Suns,13939,0,PF,9,0,1,0,0,0,0,0,0,0,0,1,1,0,2,0,1,1,-14,Drew Eubanks,1,1,0,1,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+191,570,Thaddeus,Young,Phoenix Suns,13939,0,F,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-5,Thaddeus Young,0,0,0,0,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+192,1010,Josh,Okogie,Phoenix Suns,13939,2,SF,4,1,3,33.3,0,0,0,0,0,0,0,0,0,0,0,1,0,0,-5,Josh Okogie,2,2,2,0,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+193,1875,Nassir,Little,Phoenix Suns,13939,2,SF,4,1,1,100.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-5,Nassir Little,2,2,2,0,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+194,1849,Bol,Bol,Phoenix Suns,13939,0,C,4,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,-5,Bol Bol,1,1,0,1,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+195,196,Eric,Gordon,Phoenix Suns,13939,0,SG,21,0,5,0,0,0,0,0,4,0,0,2,2,1,1,1,2,1,-18,Eric Gordon,3,2,1,3,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+196,4087,I.,Thomas,Phoenix Suns,13939,0,G,4,0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,-5,I. Thomas,0,0,0,0,13939,2024-04-20 19:30:00,Minnesota Timberwolves,Phoenix Suns
+197,260,Brandon,Ingram,New Orleans Pelicans,13943,24,SF,37,10,20,50.0,3,3,100.0,1,2,50.0,1,5,6,6,4,0,4,1,+1,Brandon Ingram,36,30,30,12,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+198,2822,Herbert,Jones,New Orleans Pelicans,13943,5,SF,26,2,3,66.7,0,2,0,1,2,50.0,0,1,1,4,2,1,3,1,-14,Herbert Jones,10,6,9,5,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+199,525,Jonas,Valanciunas,New Orleans Pelicans,13943,19,C,27,8,16,50.0,3,3,100.0,0,1,0,6,6,12,3,4,0,0,2,-4,Jonas Valanciunas,34,31,22,15,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+200,347,CJ,McCollum,New Orleans Pelicans,13943,7,SG,36,3,8,37.5,0,0,0,1,2,50.0,0,2,2,3,1,1,4,2,+7,CJ McCollum,12,9,10,5,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+201,2837,Trey,Murphy III,New Orleans Pelicans,13943,16,SG,43,6,12,50.0,2,2,100.0,2,7,28.6,0,8,8,6,1,1,4,0,+6,Trey Murphy III,30,24,22,14,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+202,385,Larry,Nance Jr.,New Orleans Pelicans,13943,13,PF,21,6,7,85.7,1,2,50.0,0,0,0,2,2,4,3,4,2,0,0,+11,Larry Nance Jr.,20,17,16,7,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+203,2668,Naji,Marshall,New Orleans Pelicans,13943,11,SF,24,5,11,45.5,0,0,0,1,4,25.0,2,4,6,2,2,2,0,1,+17,Naji Marshall,19,17,13,8,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+204,2941,Jose,Alvarado,New Orleans Pelicans,13943,10,PG,24,4,8,50.0,1,1,100.0,1,1,100.0,0,5,5,2,0,2,0,1,+11,Jose Alvarado,17,15,12,7,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+205,3406,Dyson,Daniels,New Orleans Pelicans,13943,0,G,2,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,Dyson Daniels,1,1,0,1,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+206,463,Domantas,Sabonis,Sacramento Kings,13943,23,PF,42,9,14,64.3,5,5,100.0,0,1,0,3,11,14,7,4,3,4,1,-7,Domantas Sabonis,44,37,30,21,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+207,36,Harrison,Barnes,Sacramento Kings,13943,17,SF,38,6,14,42.9,2,4,50.0,3,5,60.0,1,4,5,4,1,0,1,0,-7,Harrison Barnes,26,22,21,9,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+208,3475,Keegan,Murray,Sacramento Kings,13943,11,SF,38,4,12,33.3,1,2,50.0,2,7,28.6,5,2,7,3,2,1,1,1,-9,Keegan Murray,21,18,14,10,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+209,776,De'Aaron,Fox,Sacramento Kings,13943,35,PG,42,12,29,41.4,7,11,63.6,4,16,25.0,2,5,7,5,3,3,5,0,-3,De'Aaron Fox,47,42,40,12,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+210,3436,Keon,Ellis,Sacramento Kings,13943,0,G,28,0,5,0,0,0,0,0,4,0,0,0,0,1,4,0,1,2,-20,Keon Ellis,1,0,1,1,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+211,331,Trey,Lyles,Sacramento Kings,13943,0,PF,13,0,1,0,0,0,0,0,0,0,1,2,3,0,1,0,2,0,-7,Trey Lyles,3,3,0,3,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+212,4022,Sasha,Vezenkov,Sacramento Kings,13943,2,F,11,1,4,25.0,0,0,0,0,2,0,2,0,2,0,0,1,0,0,+3,Sasha Vezenkov,4,4,2,2,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+213,313,Alex,Len,Sacramento Kings,13943,0,C,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,+5,Alex Len,0,0,0,0,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+214,2834,Davion,Mitchell,Sacramento Kings,13943,10,PG,24,4,9,44.4,0,0,0,2,6,33.3,0,2,2,1,2,0,1,0,+10,Davion Mitchell,13,12,11,3,13943,2024-04-20 01:30:00,New Orleans Pelicans,Sacramento Kings
+215,732,O.G.,Anunoby,New York Knicks,13944,11,SF,31,5,10,50.0,0,0,0,1,3,33.3,1,3,4,0,2,1,1,0,-5,O.G. Anunoby,15,15,11,4,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+216,978,Isaiah,Hartenstein,New York Knicks,13944,6,C,18,1,4,25.0,4,4,100.0,0,0,0,5,2,7,3,3,0,0,2,-13,Isaiah Hartenstein,16,13,9,10,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+217,946,Jalen,Brunson,New York Knicks,13944,22,PG,41,8,26,30.8,5,6,83.3,1,6,16.7,5,2,7,7,1,1,5,0,-3,Jalen Brunson,36,29,29,14,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+218,791,Josh,Hart,New York Knicks,13944,22,SG,42,5,12,41.7,8,10,80.0,4,8,50.0,4,9,13,2,4,1,2,0,-5,Josh Hart,37,35,24,15,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+219,962,Donte,DiVincenzo,New York Knicks,13944,8,SG,24,3,10,30.0,0,0,0,2,5,40.0,0,2,2,2,0,1,2,1,-23,Donte DiVincenzo,12,10,10,4,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+220,60,Bojan,Bogdanovic,New York Knicks,13944,13,SF,25,4,12,33.3,2,4,50.0,3,6,50.0,1,6,7,1,2,0,0,0,+27,Bojan Bogdanovic,21,20,14,8,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+221,1020,Mitchell,Robinson,New York Knicks,13944,8,C,30,3,5,60.0,2,2,100.0,0,0,0,7,5,12,1,3,1,1,4,+20,Mitchell Robinson,21,20,9,13,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+222,2832,Miles,McBride,New York Knicks,13944,21,PG,28,7,12,58.3,2,2,100.0,5,7,71.4,0,3,3,4,3,1,0,0,+37,Miles McBride,28,24,25,7,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+223,222,Tobias,Harris,Philadelphia 76ers,13944,7,PF,31,3,7,42.9,0,0,0,1,4,25.0,0,9,9,2,4,0,2,0,0,Tobias Harris,18,16,9,11,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+224,159,Joel,Embiid,Philadelphia 76ers,13944,29,C,37,8,22,36.4,11,12,91.7,2,8,25.0,3,5,8,6,3,2,2,0,+14,Joel Embiid,43,37,35,14,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+225,327,Kyle,Lowry,Philadelphia 76ers,13944,18,PG,39,5,9,55.6,4,4,100.0,4,7,57.1,2,2,4,2,4,1,1,1,+6,Kyle Lowry,24,22,20,6,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+226,2619,Tyrese,Maxey,Philadelphia 76ers,13944,33,PG,44,14,26,53.8,2,2,100.0,3,9,33.3,0,2,2,4,3,0,3,2,-4,Tyrese Maxey,39,35,37,6,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+227,407,Kelly,Oubre Jr.,Philadelphia 76ers,13944,10,SG,39,3,7,42.9,3,4,75.0,1,2,50.0,1,2,3,1,3,5,2,1,+6,Kelly Oubre Jr.,14,13,11,4,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+228,40,Nicolas,Batum,Philadelphia 76ers,13944,3,PF,26,1,4,25.0,0,0,0,1,4,25.0,0,2,2,1,0,0,1,1,-20,Nicolas Batum,6,5,4,3,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+229,2638,Paul,Reed,Philadelphia 76ers,13944,4,SF,11,2,3,66.7,0,0,0,0,0,0,3,2,5,0,1,0,0,1,-21,Paul Reed,9,9,4,5,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+230,417,Cameron,Payne,Philadelphia 76ers,13944,0,PG,3,0,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,1,0,Cameron Payne,0,0,0,0,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+231,236,Buddy,Hield,Philadelphia 76ers,13944,0,SG,11,0,2,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,-16,Buddy Hield,1,0,1,1,13944,2024-04-20 22:00:00,New York Knicks,Philadelphia 76ers
+232,3453,Nikola,Jovic,Miami Heat,13942,5,F,27,2,6,33.3,0,0,0,1,4,25.0,1,5,6,2,2,0,2,1,+17,Nikola Jovic,13,11,7,8,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+233,2242,Caleb,Martin,Miami Heat,13942,7,SF,25,3,7,42.9,0,0,0,1,2,50.0,1,3,4,1,2,1,0,2,+16,Caleb Martin,12,11,8,5,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+234,724,Bam,Adebayo,Miami Heat,13942,13,C,32,5,8,62.5,2,4,50.0,1,2,50.0,0,4,4,4,0,0,1,2,+9,Bam Adebayo,21,17,17,8,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+235,1866,Tyler,Herro,Miami Heat,13942,24,PG,33,8,17,47.1,4,4,100.0,4,9,44.4,1,9,10,9,0,0,5,0,+32,Tyler Herro,43,34,33,19,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+236,4085,Jamie Jr.,Jaquez,Miami Heat,13942,21,G,35,8,16,50.0,4,4,100.0,1,3,33.3,1,5,6,6,3,0,1,0,+21,Jamie Jr. Jaquez,33,27,27,12,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+237,326,Kevin,Love,Miami Heat,13942,16,PF,12,2,6,33.3,10,10,100.0,2,3,66.7,1,6,7,1,0,0,0,0,+19,Kevin Love,24,23,17,8,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+238,1018,Duncan,Robinson,Miami Heat,13942,8,F,12,3,6,50.0,0,0,0,2,4,50.0,1,2,3,1,2,0,3,0,-8,Duncan Robinson,12,11,9,4,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+239,1815,Haywood,Highsmith,Miami Heat,13942,9,F,31,4,10,40.0,0,0,0,1,4,25.0,2,1,3,0,2,3,3,0,+10,Haywood Highsmith,12,12,9,3,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+240,753,Thomas,Bryant,Miami Heat,13942,4,C,4,1,2,50.0,2,2,100.0,0,0,0,1,2,3,0,0,0,0,0,-7,Thomas Bryant,7,7,4,3,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+241,3482,Orlando,Robinson,Miami Heat,13942,0,C,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,-4,Orlando Robinson,1,0,1,1,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+242,365,Patty,Mills,Miami Heat,13942,0,PG,3,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,-5,Patty Mills,1,0,1,1,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+243,564,Delon,Wright,Miami Heat,13942,5,SG,23,2,4,50.0,0,0,0,1,2,50.0,0,1,1,0,0,1,0,1,+5,Delon Wright,6,6,5,1,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+244,136,DeMar,DeRozan,Chicago Bulls,13942,22,SF,41,8,16,50.0,3,4,75.0,3,6,50.0,0,3,3,4,2,1,1,1,-20,DeMar DeRozan,29,25,26,7,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+245,534,Nikola,Vucevic,Chicago Bulls,13942,16,C,35,7,17,41.2,0,0,0,2,5,40.0,1,13,14,5,3,2,2,1,-18,Nikola Vucevic,35,30,21,19,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+246,1900,Coby,White,Chicago Bulls,13942,13,PG,36,5,16,31.3,1,2,50.0,2,8,25.0,0,2,2,4,3,1,4,0,-23,Coby White,19,15,17,6,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+247,631,Alex,Caruso,Chicago Bulls,13942,6,SG,33,2,8,25.0,0,0,0,2,6,33.3,0,3,3,4,2,0,1,1,-33,Alex Caruso,13,9,10,7,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+248,2802,Ayo,Dosunmu,Chicago Bulls,13942,10,SG,41,3,15,20.0,2,2,100.0,2,11,18.2,1,3,4,4,2,3,1,2,-25,Ayo Dosunmu,18,14,14,8,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+249,3494,Dalen,Terry,Chicago Bulls,13942,2,F,13,1,4,25.0,0,0,0,0,1,0,1,0,1,1,2,0,1,0,-5,Dalen Terry,4,3,3,2,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+250,765,Torrey,Craig,Chicago Bulls,13942,6,SF,11,2,5,40.0,0,0,0,2,5,40.0,2,1,3,1,2,2,0,1,+9,Torrey Craig,10,9,7,4,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+251,147,Andre,Drummond,Chicago Bulls,13942,2,C,8,1,4,25.0,0,0,0,0,0,0,0,4,4,0,3,1,2,0,-6,Andre Drummond,6,6,2,4,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+252,949,Jevon,Carter,Chicago Bulls,13942,2,PG,4,1,1,100.0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,+7,Jevon Carter,4,3,3,2,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls
+253,2404,Javonte,Green,Chicago Bulls,13942,12,G,17,5,6,83.3,2,2,100.0,0,1,0,2,1,3,3,0,2,0,0,+9,Javonte Green,18,15,15,6,13942,2024-04-19 23:00:00,Miami Heat,Chicago Bulls

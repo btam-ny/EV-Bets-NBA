@@ -1,0 +1,40 @@
+,id,date,home_team,away_team
+0,13710,2024-04-11T00:00:00.000Z,Milwaukee Bucks,Orlando Magic
+1,13711,2024-04-11T00:00:00.000Z,Oklahoma City Thunder,San Antonio Spurs
+2,13712,2024-04-11T02:00:00.000Z,Denver Nuggets,Minnesota Timberwolves
+3,13713,2024-04-11T02:30:00.000Z,LA Clippers,Phoenix Suns
+4,13714,2024-04-11T23:00:00.000Z,Detroit Pistons,Chicago Bulls
+5,13715,2024-04-11T23:30:00.000Z,Boston Celtics,New York Knicks
+6,13697,2024-04-10T00:00:00.000Z,Chicago Bulls,New York Knicks
+7,13698,2024-04-10T00:00:00.000Z,Houston Rockets,Orlando Magic
+8,13699,2024-04-10T00:00:00.000Z,Memphis Grizzlies,San Antonio Spurs
+9,13700,2024-04-10T00:00:00.000Z,Minnesota Timberwolves,Washington Wizards
+10,13701,2024-04-10T00:00:00.000Z,Oklahoma City Thunder,Sacramento Kings
+11,13702,2024-04-10T01:00:00.000Z,Utah Jazz,Denver Nuggets
+12,13703,2024-04-10T02:00:00.000Z,Los Angeles Lakers,Golden State Warriors
+13,13704,2024-04-10T02:00:00.000Z,Phoenix Suns,LA Clippers
+14,13705,2024-04-10T02:00:00.000Z,Portland Trail Blazers,New Orleans Pelicans
+15,13706,2024-04-10T23:00:00.000Z,Cleveland Cavaliers,Memphis Grizzlies
+16,13707,2024-04-10T23:30:00.000Z,Atlanta Hawks,Charlotte Hornets
+17,13708,2024-04-10T23:30:00.000Z,Brooklyn Nets,Toronto Raptors
+18,13709,2024-04-10T23:30:00.000Z,Miami Heat,Dallas Mavericks
+19,13692,2024-04-09T23:00:00.000Z,Charlotte Hornets,Dallas Mavericks
+20,13693,2024-04-09T23:00:00.000Z,Philadelphia 76ers,Detroit Pistons
+21,13694,2024-04-09T23:00:00.000Z,Toronto Raptors,Indiana Pacers
+22,13695,2024-04-09T23:30:00.000Z,Atlanta Hawks,Miami Heat
+23,13696,2024-04-09T23:30:00.000Z,Milwaukee Bucks,Boston Celtics
+24,13690,2024-04-08T00:30:00.000Z,Golden State Warriors,Utah Jazz
+25,13691,2024-04-08T02:00:00.000Z,Los Angeles Lakers,Minnesota Timberwolves
+26,13677,2024-04-07T00:00:00.000Z,Memphis Grizzlies,Philadelphia 76ers
+27,13678,2024-04-07T01:00:00.000Z,Denver Nuggets,Atlanta Hawks
+28,13679,2024-04-07T19:30:00.000Z,Dallas Mavericks,Houston Rockets
+29,13680,2024-04-07T19:30:00.000Z,LA Clippers,Cleveland Cavaliers
+30,13681,2024-04-07T21:00:00.000Z,Indiana Pacers,Miami Heat
+31,13682,2024-04-07T22:00:00.000Z,Boston Celtics,Portland Trail Blazers
+32,13683,2024-04-07T22:00:00.000Z,Charlotte Hornets,Oklahoma City Thunder
+33,13684,2024-04-07T22:00:00.000Z,Orlando Magic,Chicago Bulls
+34,13685,2024-04-07T22:00:00.000Z,Toronto Raptors,Washington Wizards
+35,13686,2024-04-07T22:00:00.000Z,Phoenix Suns,New Orleans Pelicans
+36,13687,2024-04-07T23:00:00.000Z,Milwaukee Bucks,New York Knicks
+37,13688,2024-04-07T23:00:00.000Z,San Antonio Spurs,Philadelphia 76ers
+38,13689,2024-04-07T23:30:00.000Z,Brooklyn Nets,Sacramento Kings
